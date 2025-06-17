@@ -1,0 +1,46 @@
+// -------- colors --------
+// main
+$clr-main_red: rgb(206, 21, 21);
+$clr-main_red_hover: rgb(204, 51, 51);
+$clr-main_body: rgb(27, 27, 27);
+
+// grey
+
+$clr-gray_dark: rgb(27, 27, 27);
+$clr-gray_37: rgb(37, 37, 37);
+$clr-gray_43: rgb(43, 43, 43);
+$clr-gray_47_hover: rgb(47, 47, 47);
+$clr-gray_55: rgb(55, 55, 55);
+
+// coefficient
+
+$clr-coef-red_light: #D95151;
+$clr-coef-red_dark: #813434;
+$clr-coef-green_light: #53B868;
+$clr-coef-green_dark: #2B6838;
+
+// counter-strike 2
+
+$clr-cs-yellow: rgb(240, 180, 18);
+$clr-cs-blue: rgb(41, 144, 216);
+
+// -------- style ----------
+
+$drop_shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+// -------- mixins ----------
+
+@mixin pos_absolute($t, $r, $b, $l) {
+    position: absolute;
+    right: $r;
+    bottom: $b;
+    top: $t;
+    left: $l;
+}
+
+@mixin grid($gap, $i) {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: repeat($i, minmax(0px, 1fr));
+}

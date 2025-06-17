@@ -1,0 +1,156 @@
+.header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    padding: {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    };
+
+    & > .inner {
+        height: 70px;
+        background-color: rgb(31, 31, 31);
+        border: 1px solid rgb(61, 61, 61);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 337px 1fr 443px;
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        };
+    }
+
+    &-separator {
+        height: 100%;
+        width: 2px;
+        background-color: #3D3D3D;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    &__logo {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        & > img {
+            height: 45px;
+        }
+    }
+    &__center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & > a {
+                font-size: 16px;
+                cursor: pointer;
+                position: relative;
+                // padding-left: 10px;
+                // padding-right: 10px;
+                & > div {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -5px;
+                    height: 2px;
+                    width: 0px;
+                    border-radius: 1px;
+                    transform: translateX(-50%);
+                    background-color: #fff;
+                    transition: .2s;
+                }
+                &:hover div{
+                    width: 15px;
+                }
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        &__nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & > a, div {
+                display: block;
+                cursor: pointer;
+                & > svg {
+                    height: 30px;
+                    & path {
+                        fill: rgb(220, 220, 220);
+                        transition: .2s;
+                    }
+                }
+                &:hover path{
+                    fill: rgb(255, 255, 255);
+                }
+            }
+            & > button:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    &__balance {
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-bottom: 2px;
+            cursor: pointer;
+            & > span {
+                font-size: 12px;
+                transition: .2s;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            &__replenish {
+                color: #fff;
+                margin-right: 4px;
+                width: 0;
+            }
+            &__balance {
+                color: #8A8A8A;
+                width: 41px;
+            }
+            &:hover &__replenish {
+                width: 61px;
+            }
+            &:hover &__balance {
+                width: 0;
+            }
+        }
+        &__value {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            cursor: pointer;
+            & > div {
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+            & > svg {
+                height: 14px;
+            }
+            path{
+                transition: .2s;
+            }
+            &:hover path{
+                stroke: #fff;
+            }
+        }
+    }
+}

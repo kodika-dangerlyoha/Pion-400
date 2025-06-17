@@ -1,3 +1,5 @@
+@use 'base';
+
 body{
 	background-color: rgb(27, 27, 27);
 	margin: 0;
@@ -62,4 +64,219 @@ label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+// .inner {
+//     width: 1000px;
+//     margin: auto;
+// }
+
+.small {
+    transform: scale(0.98);
+    opacity: 0.5;
+}
+
+.fb {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(70, 70, 70, 0.5);
+    border: 1px solid rgba(130, 130, 130, 0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    @include base.grid(10px, 5);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    transition: .2s;
+    &__but {
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        cursor: pointer;
+        &:hover {
+            color: rgb(128, 168, 255);
+        }
+    }
+    * {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    &:hover {
+        height: 175px;
+        width: 700px;
+        * {
+            transition: .2s;
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.def-button_like_input {
+	display: block;
+    box-sizing: border-box;
+    height: 56px;
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #3D3D3D;
+    background-color: base.$clr-gray_dark;
+    padding-left: 17px;
+    font-size: 16px;
+    outline: none;
+    cursor: text;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+
+.def-input {
+	display: block;
+    box-sizing: border-box;
+    height: 56px;
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #3D3D3D;
+    background-color: base.$clr-gray_dark;
+    padding-left: 17px;
+    font-size: 16px;
+    outline: none;
+    cursor: text;
+    margin-bottom: 10px;
+    transition: 0.1s;
+    &:focus {
+        border: 2px solid #5e5e5e;
+        transform: scale(1.02);
+    }
+}
+
+.def-input_new {
+    width: 100%;
+    background-color: base.$clr-gray_55;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: text;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: .2s;
+    &:focus {
+        border-color: rgb(82, 82, 82);
+    }
+}
+
+.def-profile_block {
+	background-color: base.$clr-gray_37;
+    border: 1px solid base.$clr-gray_55;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.def-button_red {
+	padding: 13px;
+	font-weight: 700;
+	font-size: 16px;
+	background-color: base.$clr-main_red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        background-color: base.$clr-main-red_hover;
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.def-button_transparent {
+	padding: 13px;
+	font-weight: 700;
+	font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        background-color: base.$clr-gray_55;
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.def-status {
+    background-color: base.$clr-main_red;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: auto;
+    // width: 100px;
+    padding: {
+        top: 3px;
+        bottom: 3px;
+        left: 6px;
+        right: 6px;
+    };
+}
+
+.def-rating {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: {
+        top: 3px;
+        bottom: 3px;
+        right: 6px;
+        left: 6px;
+    };
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid #C6C6C6;
+}
+
+.def-h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: {
+        top: 0;
+        bottom: 10px;
+    };
+}
+
+.def-h3-index {
+    width: 100%;
+    text-align: center;
+    padding: {
+        top: 7px;
+        bottom: 7px;
+    };
+    background-color: base.$clr-gray_37;
+    border: 1px solid base.$clr-gray_55;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    // width: 100%;
+    // text-align: center;
+    // border-bottom: 1px solid $clr-gray_light_55;
+    // font-size: 52px;
+    // color: #d4d4d4;
+    // font-weight: 900;
+    // margin-bottom: 10px;
+}
+
+.def-b55 {
+    background-color: base.$clr-gray_37;
+    border: 1px solid base.$clr-gray_55;
+    border-radius: 5px;
 }

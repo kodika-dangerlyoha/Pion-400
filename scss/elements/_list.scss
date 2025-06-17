@@ -1,0 +1,45 @@
+.list {
+    &__head {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 6px;
+        cursor: pointer;
+        background-color: transparent;
+        transition: .2s;
+        & > img {
+            height: 100%;
+            margin-right: 10px;
+        }
+        &__titleGame {
+            margin-right: 7px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        &__point {
+            background-color: base.$clr-red;
+            font-size: 12px;
+            font-weight: 600;
+            width: 22px;
+            height: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        &__arrow {
+            position: absolute;
+            right: 0;
+            height: 50px;
+            width: 40px;
+            transition: .2s;
+            & > svg {
+                & > path {
+
+                }
+            }
+        }
+        &:hover {
+            background-color: base.$clr-gray_light_55;
+        }
+    }
+}

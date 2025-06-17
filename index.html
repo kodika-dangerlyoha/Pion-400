@@ -69,6 +69,133 @@
 		</div>
 	</header>
 	<main>
+		<div class="inner">
+			<aside class="navigation">
+				<div class="navigation__search">
+					<input type="text" class="navigation__search txt" placeholder="Поиск">
+					<button type="button" class="search flex-center">
+						<svg  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+					<button type="button" class="close flex-center">
+						<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.6636 0.345766C12.2821 -0.0358037 11.6657 -0.0358037 11.2841 0.345766L6.4998 5.12028L1.7155 0.335982C1.33393 -0.0455878 0.717552 -0.0455878 0.335982 0.335982C-0.0455878 0.717552 -0.0455878 1.33393 0.335982 1.7155L5.12028 6.4998L0.335982 11.2841C-0.0455878 11.6657 -0.0455878 12.2821 0.335982 12.6636C0.717552 13.0452 1.33393 13.0452 1.7155 12.6636L6.4998 7.87933L11.2841 12.6636C11.6657 13.0452 12.2821 13.0452 12.6636 12.6636C13.0452 12.2821 13.0452 11.6657 12.6636 11.2841L7.87933 6.4998L12.6636 1.7155C13.0354 1.34372 13.0354 0.717552 12.6636 0.345766Z" fill="#AAAAAA"/>
+						</svg>
+					</button>
+				</div>
+				<div class="navigation__games">
+					<div class="navigation__games__game navigation__games__game_active" id="nav_games_cs2">
+						<div class="navigation__games__game__head" onclick="show_tournament('cs2')">
+							<img src="img/games/cs.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Counter-Strike 2</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament navigation__games__game__tournament_active">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+					</div>
+					<div class="navigation__games__game" id="nav_games_dota">
+						<div class="navigation__games__game__head" onclick="show_tournament('dota')">
+							<img src="img/games/dota.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Dota 2</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+					</div>
+					<div class="navigation__games__game" id="nav_games_valorant">
+						<div class="navigation__games__game__head" onclick="show_tournament('valorant')">
+							<img src="img/games/valorant.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Valorant</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+						</div>
+						<div class="navigation__games__game__tournament">
+							<div class="navigation__games__game__tournament__icon">
+								<img src="img/icons/tournment.png" alt="">
+							</div>
+							<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
 	</main>
 	<footer></footer>
 	<script type="text/javascript" src="scripts/script.js"></script>

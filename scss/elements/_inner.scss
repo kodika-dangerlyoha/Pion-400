@@ -1,0 +1,13 @@
+.inner {
+    max-width: 2000px;
+    margin: auto;
+    &_threeSec {
+        display: grid;
+        grid-template-columns: 355px 1fr 460px;
+    }
+    &_oneSec {
+        width: 1400px;
+        padding-top: 100px;
+        display: block;
+    }
+}

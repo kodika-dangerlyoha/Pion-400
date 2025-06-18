@@ -1,0 +1,205 @@
+@use '../default/base';
+
+.navigation {
+    position: sticky; // See link
+    top: 0; //to make it stick to the top of the screen
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: {
+        top: 105px;
+        right: 20px;
+        left: 20px;
+    };
+    &__search {
+        position: relative;
+        width: 100%;
+        & > input {
+            width: 100%;
+            background-color: base.$clr-gray_55;
+            border-radius: 8px;
+            padding: {
+                left: 48px;
+                top: 15px;
+                bottom: 15px;
+                right: 48px;
+            };
+            cursor: text;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        & > button {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 48px;
+            background: transparent;
+            cursor: pointer;
+            transition: .2s;
+            & > svg {
+                transition: inherit;
+                & > path {
+                    transition: inherit;
+                }
+            }
+            &.search {
+                left: 0;
+                & > svg {
+                    height: 25px;
+                    & > path {
+                        stroke: rgb(255, 255, 255);
+                        stroke-width: 3px;
+                    }
+                }
+            }
+            &.close {
+                right: 0;
+                & > svg {
+                    height: 20px;
+                    & > path {
+                        fill: rgb(170, 170, 170);
+                    }
+                }
+                &:hover {
+                    & path {
+                        fill: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+    &__games {
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 8px;
+        // background-color: base.$clr-gray_37;
+        // padding: 8px;
+        // border: 1px solid base.$clr-gray_55;
+        &__game {
+            background-color: base.$clr-gray_37;
+            border: 1px solid base.$clr-gray_55;
+            border-radius: 5px;
+            overflow: hidden;
+            max-height: 50px;
+            // height: 50px;
+            margin-bottom: 8px;
+            // border: 1px solid rgb(70, 70, 70);
+            transition: .4s;
+            &__head {
+                & > img {
+                    height: 100%;
+                    margin-right: 10px;
+                }
+                &__titleGame {
+                    margin-right: 7px;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+                &__point {
+                    background-color: base.$clr-main-red;
+                    font-size: 12px;
+                    font-weight: 600;
+                    width: 22px;
+                    height: 16px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                &__arrow {
+                    position: absolute;
+                    right: 0;
+                    height: 50px;
+                    width: 40px;
+                    transition: .2s;
+                    & > svg {
+                        & > path {
+
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: base.$clr-gray_55;
+                }
+            }
+            &__tournament {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                padding: 0;
+                padding-left: 6px;
+                padding-right: 6px;
+                margin: 0;
+                margin-right: 4px;
+                margin-left: 4px;
+                max-height: 0px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .2s,  margin .5s, max-height .5s, padding .5s, opacity .5s;
+                &__icon {
+                    height: 100%;
+                    margin-right: 6px;
+                    & > img {
+                        width: 25px;
+                    }
+                    & > svg {
+                        width: 25px;
+                        height: 25px;
+                        & * {
+                            fill: rgb(200, 200, 200);
+                        }
+                    }
+                }
+                &__title {
+                    font-size: 12px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+                &:hover {
+                    background-color: base.$clr-gray_55;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgb(80, 80, 80);
+                }
+                &:active {
+                    transform: scale(0.96);
+                }
+                &_active {
+                    pointer-events: none;
+                    background-color: base.$clr-gray_55;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgb(80, 80, 80);
+                }
+                &_active &__icon > svg * {
+                    fill: #fff;
+                }
+            }
+            &_active {
+                max-height: 1000px;
+                // height: auto;
+            }
+            &_active &__head {
+                background-color: base.$clr-gray_55;
+                &__arrow {
+                    transform: rotate(180deg);
+                }
+            }
+            &_active &__tournament {
+                max-height: 100px;
+                margin: {
+                    right: 4px;
+                    left: 4px;
+                    top: 4px;
+                    bottom: 4px;
+                };
+                padding: 6px;
+                opacity: 1;
+                visibility: visible;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }   
+}

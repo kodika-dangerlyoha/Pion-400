@@ -44,7 +44,7 @@ label {
 	display: block;
 }
 
-/* ----------- classes ----------- */
+// -------------- classes
 
 .hide {
 	display: none;
@@ -279,4 +279,15 @@ label {
     background-color: base.$clr-gray_37;
     border: 1px solid base.$clr-gray_55;
     border-radius: 5px;
+}
+
+.def-list_head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .2s;
 }

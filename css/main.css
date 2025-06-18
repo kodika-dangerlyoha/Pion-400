@@ -42,7 +42,6 @@ label {
   display: block;
 }
 
-/* ----------- classes ----------- */
 .hide {
   display: none;
   visibility: hidden;
@@ -258,6 +257,17 @@ label {
   border-radius: 5px;
 }
 
+.def-list_head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
 .header {
   height: 70px;
   position: fixed;
@@ -416,4 +426,187 @@ label {
   width: 1400px;
   padding-top: 100px;
   display: block;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 105px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.navigation__search {
+  position: relative;
+  width: 100%;
+}
+.navigation__search > input {
+  width: 100%;
+  background-color: rgb(55, 55, 55);
+  border-radius: 8px;
+  padding-left: 48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 48px;
+  cursor: text;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navigation__search > button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.navigation__search > button > svg {
+  transition: inherit;
+}
+.navigation__search > button > svg > path {
+  transition: inherit;
+}
+.navigation__search > button.search {
+  left: 0;
+}
+.navigation__search > button.search > svg {
+  height: 25px;
+}
+.navigation__search > button.search > svg > path {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 3px;
+}
+.navigation__search > button.close {
+  right: 0;
+}
+.navigation__search > button.close > svg {
+  height: 20px;
+}
+.navigation__search > button.close > svg > path {
+  fill: rgb(170, 170, 170);
+}
+.navigation__search > button.close:hover path {
+  fill: rgb(255, 255, 255);
+}
+.navigation__games {
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 8px;
+}
+.navigation__games__game {
+  background-color: rgb(37, 37, 37);
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 50px;
+  margin-bottom: 8px;
+  transition: 0.4s;
+}
+.navigation__games__game__head > img {
+  height: 100%;
+  margin-right: 10px;
+}
+.navigation__games__game__head__titleGame {
+  margin-right: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navigation__games__game__head__point {
+  background-color: rgb(206, 21, 21);
+  font-size: 12px;
+  font-weight: 600;
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.navigation__games__game__head__arrow {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 40px;
+  transition: 0.2s;
+}
+.navigation__games__game__head:hover {
+  background-color: rgb(55, 55, 55);
+}
+.navigation__games__game__tournament {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 0;
+  margin-right: 4px;
+  margin-left: 4px;
+  max-height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s, margin 0.5s, max-height 0.5s, padding 0.5s, opacity 0.5s;
+}
+.navigation__games__game__tournament__icon {
+  height: 100%;
+  margin-right: 6px;
+}
+.navigation__games__game__tournament__icon > img {
+  width: 25px;
+}
+.navigation__games__game__tournament__icon > svg {
+  width: 25px;
+  height: 25px;
+}
+.navigation__games__game__tournament__icon > svg * {
+  fill: rgb(200, 200, 200);
+}
+.navigation__games__game__tournament__title {
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.navigation__games__game__tournament:hover {
+  background-color: rgb(55, 55, 55);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(80, 80, 80);
+}
+.navigation__games__game__tournament:active {
+  transform: scale(0.96);
+}
+.navigation__games__game__tournament_active {
+  pointer-events: none;
+  background-color: rgb(55, 55, 55);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(80, 80, 80);
+}
+.navigation__games__game__tournament_active .navigation__games__game__tournament__icon > svg * {
+  fill: #fff;
+}
+.navigation__games__game_active {
+  max-height: 1000px;
+}
+.navigation__games__game_active .navigation__games__game__head {
+  background-color: rgb(55, 55, 55);
+}
+.navigation__games__game_active .navigation__games__game__head__arrow {
+  transform: rotate(180deg);
+}
+.navigation__games__game_active .navigation__games__game__tournament {
+  max-height: 100px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 6px;
+  opacity: 1;
+  visibility: visible;
+}
+.navigation__games__game:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,271 @@
+@use '../../default/base';
+
+.bettingLog {
+    // width: 100%;
+    border-radius: 5px;
+    max-height: 54px;
+    &__head {
+        background-color: base.$clr-gray_37;
+        border: 1px solid base.$clr-gray_55;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding-left: 14px;
+        cursor: pointer;
+        transition: .2s;
+        & > span {
+            margin-right: 5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        & > div {
+            width: 50px;
+            height: 100%;
+            transition: .2s;
+            // & > svg {
+
+            // }
+        }
+        &:hover {
+            background-color: base.$clr-gray_55;
+        }
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        &__bet {
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            margin-top: 0;
+
+            background-color: base.$clr-gray_37;
+            border: 1px solid base.$clr-gray_55;
+            box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+
+            transition: all .2s, margin-top .4s, height .4s, opacity .4s, visibility .4s;
+            animation: open_betList 0.3s ease-in-out 1;
+            
+            height: 0;
+            opacity: 0;
+            cursor: pointer;
+            & .txt {
+                cursor: inherit;
+            }
+            &__game {
+                height: 48px;
+                width: 48px;
+                margin-right: 5px;
+                & > img {
+                    width: 100%;
+                }
+            }
+            &__info {
+                color: rgb(180, 180, 180);
+                font-size: 14px;
+                &__date {
+                    & > span {
+                        font-weight: 700;
+                    }
+                }
+                &__teams {
+                    font-weight: 700;
+                    & > span {
+                        color: #fff;
+                    }
+                }
+            }
+            &__id {
+                color: rgb(180, 180, 180);
+                font-size: 14px;
+            }
+            &__coef {
+                font-weight: 700;
+                font-size: 14px;
+                & > span {
+                    font-size: 12px;
+                    color: #bcbcbc;
+                }
+            }
+            &__status {
+                color: #8a8a8a;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            &__head {
+                height: 32px;
+                background-color: base.$clr-gray_55;
+                padding: 3px;
+                padding-left: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & > h5 {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                &__close {
+                    cursor: pointer;
+                    padding: {
+                        left: 4px;
+                        right: 4px;
+                    };
+                    & > svg {
+                        height: 12px;
+                        width: 12px;
+                        transition: .2s;
+                        & > path {
+                            transition: inherit;
+                        }
+                    }
+                    &:hover path {
+                        fill: #fff;
+                    }
+                }
+                &__left {
+                    display: flex;
+                    align-items: center;
+                    & > div {
+                        margin-right: 8px;
+                        margin-left: 8px;
+                        height: 10px;
+                        background-color: rgb(180, 180, 180);
+                        width: 1px;
+                    }
+                }
+            }
+            &__body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                &__left {
+                    align-items: center;
+                    display: flex;
+                }
+                &__right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: end;
+                    &_match {
+                        display: none;
+                    }
+                }
+            }
+            &__value {
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                padding: 4px;
+                background-color: base.$clr-gray_47_hover;
+                border: 1px solid #8a8a8a;
+                border-radius: 5px;
+                font-size: 14px;
+                & > span.betlog_sum {
+                    color: #8a8a8a;
+                }
+                & > svg.svgwinbet {
+                    display: block;
+                }
+                & > svg.svglosebet {
+                    display: none;
+                    transform: translateX(1px);
+                }
+                & > span.betlog_res {
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                background-color: base.$clr-gray_47_hover;
+                border-color: rgb(88, 88, 88);
+                transform: scale(1.02);
+                box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.2);
+            }
+            &:active {
+                transform: scale(0.98);
+                box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            &_win &__value > span.betlog_sum{
+                color: #fff;
+            }
+            &_win &__value > span.betlog_res,
+            &_win &__status
+            {
+                color: #4BE96C;
+            }
+            &_win &__value path{
+                stroke: #4BE96C;
+            }
+            &_win &__value{
+                background-color: base.$clr-coef-green_dark;
+                border-color: base.$clr-coef-green_light;
+            }
+
+            &_lose &__value > svg.svglosebet{
+                display: block;
+            }
+            &_lose &__value > svg.svgwinbet{
+                display: none;
+            }
+            &_lose &__value > span.betlog_sum{
+                color: #fff;
+            }
+            &_lose &__value > span.betlog_res,
+            &_lose &__status
+            {
+                color: #FF5757;
+            }
+            &_lose &__value path{
+                stroke: #FF5757;
+            }
+            &_lose &__value{
+                background-color: base.$clr-coef-red_dark;
+                border-color: base.$clr-coef-red_light;
+            }
+
+            &_match &__coef{
+                margin-bottom: 3px;
+            }
+            &_match &__head{
+                display: none;
+            }
+            &_match &__body__right{
+                &_match {
+                    display: flex;
+                }
+                &_profile {
+                    display: none;
+                }
+            }
+            &_hidden {
+                display: none;
+            }
+        }
+    }
+    &_active {
+        max-height: 1000px;
+    }
+    &_active > &__head {
+        background-color: base.$clr-gray_55;
+        & > div {
+            transform: rotate(180deg);
+        }
+    }
+    &_active &__list__bet {
+        margin-top: 7px;
+        height: 60px;
+        visibility: visible;
+        opacity: 1;
+    }
+}

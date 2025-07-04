@@ -317,26 +317,18 @@ label {
 .header__center__nav {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 .header__center__nav > a {
   font-size: 16px;
   cursor: pointer;
   position: relative;
-}
-.header__center__nav > a > div {
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  height: 2px;
-  width: 0px;
-  border-radius: 1px;
-  transform: translateX(-50%);
-  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(255, 255, 255);
   transition: 0.2s;
 }
-.header__center__nav > a:hover div {
-  width: 15px;
+.header__center__nav > a:hover {
+  color: rgb(220, 220, 220);
 }
 .header__right {
   display: flex;
@@ -609,4 +601,519 @@ label {
 }
 .navigation__games__game:last-child {
   margin-bottom: 0;
+}
+
+.bettingHistory {
+  margin-bottom: 10px;
+}
+
+.bettingHistory__header {
+  background-color: #373737;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #373737;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bettingHistory__header > span {
+  margin-right: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bettingHistory__header > div {
+  width: 50px;
+  height: 100%;
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
+
+.bettingHistory__list {
+  position: relative;
+  background-color: #252525;
+  border: 1px solid #373737;
+  border-radius: 0px 0px 5px 5px;
+  max-height: 200px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.bettingHistory__list > div._list {
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 7px;
+  max-height: 200px;
+  width: 100%;
+  overflow: auto;
+}
+
+.bettingHistory__list > div._list::-webkit-scrollbar {
+  width: 0;
+}
+
+.bettingHistory__list__bet {
+  position: relative;
+  z-index: 2;
+  background-color: #292929;
+  border: 1px solid #373737;
+  width: 100%;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  height: 28px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.bettingHistory__list__bet__nickname {
+  font-weight: 700;
+  width: 80px;
+  overflow: hidden;
+}
+
+.bettingHistory__list__bet__mapNum {
+  width: 52px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.bettingHistory__list__bet__team {
+  width: 100px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.bettingHistory__list__bet__separator {
+  height: 100%;
+  width: 1px;
+  background-color: #373737;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.bettingHistory__list__bet__info {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  align-items: center;
+  border-left: 1px solid #373737;
+  background-color: #252525;
+  padding-left: 5px;
+}
+
+.bettingHistory__list__bet__info__cash {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.bettingHistory__list__bet__info__coef {
+  color: #B8B8B8;
+  margin-right: 2px;
+}
+
+.bettingHistory__list__bet__info__coef_new {
+  color: #fff;
+  margin-right: 0;
+}
+
+.bettingHistory__list__bet__info > svg {
+  margin-right: 2px;
+}
+
+.bettingHistory__list__bet__info > span {
+  color: #B8B8B8;
+}
+
+.bettingHistory__list__bet__left {
+  display: flex;
+  padding: 5px 0px 5px 0px;
+}
+
+.bettingHistory__list__bet__right {
+  display: flex;
+  justify-content: end;
+}
+
+.bettingHistory__list__topBg, .bettingHistory__list__bottomBg {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.bettingHistory__list__topBg {
+  top: 0;
+  background: linear-gradient(to bottom, #252525, transparent);
+}
+
+.bettingHistory__list__bottomBg {
+  bottom: 0;
+  background: linear-gradient(to top, #252525, transparent);
+}
+
+.bettingHistory:hover .bettingHistory__header {
+  background-color: #373737;
+}
+
+.bettingHistory_hidden {
+  margin-bottom: 8px;
+}
+
+.bettingHistory_hidden .bettingHistory__header {
+  background-color: #252525;
+  border-radius: 5px;
+}
+
+.bettingHistory_hidden .bettingHistory__header > div {
+  transform: rotate(0deg);
+}
+
+.bettingHistory_hidden .bettingHistory__list {
+  background-color: #252525;
+  border-radius: 5px;
+  gap: 0px;
+  opacity: 0;
+  padding: 0;
+  max-height: 0px;
+}
+
+.bettingHistory_hidden .bettingHistory__list__bet {
+  height: 0px;
+}
+
+.bettingLog {
+  border-radius: 5px;
+  max-height: 54px;
+}
+
+.bettingLog__head {
+  background-color: rgb(37, 37, 37);
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bettingLog__head > span {
+  margin-right: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bettingLog__head > div {
+  width: 50px;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.bettingLog__head:hover {
+  background-color: rgb(55, 55, 55);
+}
+
+.bettingLog__head:active {
+  transform: scale(0.98);
+}
+
+.bettingLog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.bettingLog__list__bet {
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  margin-top: 0;
+  background-color: rgb(37, 37, 37);
+  border: 1px solid rgb(55, 55, 55);
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.2s, margin-top 0.4s, height 0.4s, opacity 0.4s, visibility 0.4s;
+  animation: open_betList 0.3s ease-in-out 1;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.bettingLog__list__bet .txt {
+  cursor: inherit;
+}
+
+.bettingLog__list__bet__game {
+  height: 48px;
+  width: 48px;
+  margin-right: 5px;
+}
+
+.bettingLog__list__bet__game > img {
+  width: 100%;
+}
+
+.bettingLog__list__bet__info {
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__info__date > span {
+  font-weight: 700;
+}
+
+.bettingLog__list__bet__info__teams {
+  font-weight: 700;
+}
+
+.bettingLog__list__bet__info__teams > span {
+  color: #fff;
+}
+
+.bettingLog__list__bet__id {
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__coef {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__coef > span {
+  font-size: 12px;
+  color: #bcbcbc;
+}
+
+.bettingLog__list__bet__status {
+  color: #8a8a8a;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__head {
+  height: 32px;
+  background-color: rgb(55, 55, 55);
+  padding: 3px;
+  padding-left: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bettingLog__list__bet__head > h5 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__head__close {
+  cursor: pointer;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.bettingLog__list__bet__head__close > svg {
+  height: 12px;
+  width: 12px;
+  transition: 0.2s;
+}
+
+.bettingLog__list__bet__head__close > svg > path {
+  transition: inherit;
+}
+
+.bettingLog__list__bet__head__close:hover path {
+  fill: #fff;
+}
+
+.bettingLog__list__bet__head__left {
+  display: flex;
+  align-items: center;
+}
+
+.bettingLog__list__bet__head__left > div {
+  margin-right: 8px;
+  margin-left: 8px;
+  height: 10px;
+  background-color: rgb(180, 180, 180);
+  width: 1px;
+}
+
+.bettingLog__list__bet__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.bettingLog__list__bet__body__left {
+  align-items: center;
+  display: flex;
+}
+
+.bettingLog__list__bet__body__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.bettingLog__list__bet__body__right_match {
+  display: none;
+}
+
+.bettingLog__list__bet__value {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  background-color: rgb(47, 47, 47);
+  border: 1px solid #8a8a8a;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.bettingLog__list__bet__value > span.betlog_sum {
+  color: #8a8a8a;
+}
+
+.bettingLog__list__bet__value > svg.svgwinbet {
+  display: block;
+}
+
+.bettingLog__list__bet__value > svg.svglosebet {
+  display: none;
+  transform: translateX(1px);
+}
+
+.bettingLog__list__bet__value > span.betlog_res {
+  color: #fff;
+}
+
+.bettingLog__list__bet:hover {
+  background-color: rgb(47, 47, 47);
+  border-color: rgb(88, 88, 88);
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bettingLog__list__bet:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bettingLog__list__bet_win .bettingLog__list__bet__value > span.betlog_sum {
+  color: #fff;
+}
+
+.bettingLog__list__bet_win .bettingLog__list__bet__value > span.betlog_res, .bettingLog__list__bet_win .bettingLog__list__bet__status {
+  color: #4BE96C;
+}
+
+.bettingLog__list__bet_win .bettingLog__list__bet__value path {
+  stroke: #4BE96C;
+}
+
+.bettingLog__list__bet_win .bettingLog__list__bet__value {
+  background-color: #2B6838;
+  border-color: #53B868;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value > svg.svglosebet {
+  display: block;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value > svg.svgwinbet {
+  display: none;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value > span.betlog_sum {
+  color: #fff;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value > span.betlog_res, .bettingLog__list__bet_lose .bettingLog__list__bet__status {
+  color: #FF5757;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value path {
+  stroke: #FF5757;
+}
+
+.bettingLog__list__bet_lose .bettingLog__list__bet__value {
+  background-color: #813434;
+  border-color: #D95151;
+}
+
+.bettingLog__list__bet_match .bettingLog__list__bet__coef {
+  margin-bottom: 3px;
+}
+
+.bettingLog__list__bet_match .bettingLog__list__bet__head {
+  display: none;
+}
+
+.bettingLog__list__bet_match .bettingLog__list__bet__body__right_match {
+  display: flex;
+}
+
+.bettingLog__list__bet_match .bettingLog__list__bet__body__right_profile {
+  display: none;
+}
+
+.bettingLog__list__bet_hidden {
+  display: none;
+}
+
+.bettingLog_active {
+  max-height: 1000px;
+}
+
+.bettingLog_active > .bettingLog__head {
+  background-color: rgb(55, 55, 55);
+}
+
+.bettingLog_active > .bettingLog__head > div {
+  transform: rotate(180deg);
+}
+
+.bettingLog_active .bettingLog__list__bet {
+  margin-top: 7px;
+  height: 60px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.rAside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding-top: 105px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.rAside__stream {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.rAside__stream > img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.rAside__stream > iframe {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

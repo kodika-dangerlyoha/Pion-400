@@ -1,0 +1,25 @@
+@use "rAside/bettingHistory";
+@use "rAside/bettingLog";
+
+.rAside {
+    position: sticky; // See link
+    top: 0; //to make it stick to the top of the screen
+    height: 100vh;
+    padding-top: 105px;
+    padding: {
+        right: 20px;
+        left: 20px;
+    };
+    &__stream {
+        width: 100%;
+        margin-bottom: 10px;
+        & > img {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        & > iframe {
+            width: 100%;
+        }
+    }
+}

@@ -73,12 +73,12 @@
 			<aside class="navigation">
 				<div class="navigation__search">
 					<input type="text" class="navigation__search txt" placeholder="Поиск">
-					<button type="button" class="search flex-center">
+					<button title="search" type="button" class="search flex-center">
 						<svg  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</button>
-					<button type="button" class="close flex-center">
+					<button title="clear" type="button" class="close flex-center">
 						<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12.6636 0.345766C12.2821 -0.0358037 11.6657 -0.0358037 11.2841 0.345766L6.4998 5.12028L1.7155 0.335982C1.33393 -0.0455878 0.717552 -0.0455878 0.335982 0.335982C-0.0455878 0.717552 -0.0455878 1.33393 0.335982 1.7155L5.12028 6.4998L0.335982 11.2841C-0.0455878 11.6657 -0.0455878 12.2821 0.335982 12.6636C0.717552 13.0452 1.33393 13.0452 1.7155 12.6636L6.4998 7.87933L11.2841 12.6636C11.6657 13.0452 12.2821 13.0452 12.6636 12.6636C13.0452 12.2821 13.0452 11.6657 12.6636 11.2841L7.87933 6.4998L12.6636 1.7155C13.0354 1.34372 13.0354 0.717552 12.6636 0.345766Z" fill="#AAAAAA"/>
 						</svg>
@@ -201,9 +201,512 @@
 					</div>
 				</div>
 			</aside>
+			<section class="centerBlock"></section>
+			<aside class="rAside">
+				<div class="rAside__stream">
+					<!-- <img src="img/stream.png" alt=""> -->
+					<iframe title="stream_from_tw" src="https://player.twitch.tv/?channel=rachelr&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="258" width="620"></iframe>
+				</div>
+				<div class="bettingHistory bettingHistory_hidden">
+					<div class="bettingHistory__header txt" onclick="toggle_bettingHistory()">
+						<span>История ставок</span>
+						<div class="flex-center">
+							<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="bettingHistory__list">
+						<div class="bettingHistory__list__topBg"></div>
+						<div class="bettingHistory__list__bottomBg"></div>
+						<div class="_list">
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bettingLog">
+					<div class="bettingLog__head" onclick="show_pari()">
+						<span class="txt">Мои пари</span>
+						<div class="flex-center">
+							<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="bettingLog__list">
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/cs.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/valorant.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/dota.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</aside>
 		</div>
 	</main>
-	<footer></footer>
+	<footer class="footer"></footer>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

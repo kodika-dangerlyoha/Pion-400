@@ -1,3 +1,5 @@
+@use '../default/base';
+
 .header {
     height: 70px;
     position: fixed;
@@ -14,7 +16,7 @@
         left: 10px;
         right: 10px;
     };
-
+    
     & > .inner {
         height: 70px;
         background-color: rgb(31, 31, 31);
@@ -52,27 +54,32 @@
         &__nav {
             display: flex;
             align-items: center;
-            gap: 20px;
+            // gap: 20px;
             & > a {
                 font-size: 16px;
                 cursor: pointer;
                 position: relative;
-                // padding-left: 10px;
-                // padding-right: 10px;
-                & > div {
-                    position: absolute;
-                    left: 50%;
-                    bottom: -5px;
-                    height: 2px;
-                    width: 0px;
-                    border-radius: 1px;
-                    transform: translateX(-50%);
-                    background-color: #fff;
-                    transition: .2s;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: rgb(255, 255, 255);
+                transition: .2s;
+                &:hover {
+                    color: rgb(220, 220, 220);
                 }
-                &:hover div{
-                    width: 15px;
-                }
+                // & > div {
+                //     position: absolute;
+                //     left: 50%;
+                //     bottom: -5px;
+                //     height: 2px;
+                //     width: 0px;
+                //     border-radius: 1px;
+                //     transform: translateX(-50%);
+                //     background-color: #fff;
+                //     transition: .2s;
+                // }
+                // &:hover div{
+                //     width: 15px;
+                // }
             }
         }
     }

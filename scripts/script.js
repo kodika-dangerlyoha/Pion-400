@@ -1,6 +1,14 @@
 const show_tournament = (title) => {
-    document.querySelector('.navigation__games__game_active').classList.remove('navigation__games__game_active');
-    document.querySelector(`#nav_games_${title}`).classList.add('navigation__games__game_active');
+    const active = document.querySelector('.navigation__games__game_active');
+    const next = document.querySelector(`#nav_games_${title}`);
+
+    if (active) {
+        active.classList.remove('navigation__games__game_active');
+    }
+    
+    if (active != next) {
+        next.classList.add('navigation__games__game_active');
+    }
 }
 
 const toggle_bettingHistory = () => {

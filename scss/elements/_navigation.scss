@@ -112,11 +112,11 @@
                     height: 50px;
                     width: 40px;
                     transition: .2s;
-                    & > svg {
-                        & > path {
+                    // & > svg {
+                    //     & > path {
 
-                        }
-                    }
+                    //     }
+                    // }
                 }
                 &:hover {
                     background-color: base.$clr-gray_55;

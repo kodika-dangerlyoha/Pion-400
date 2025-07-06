@@ -39,8 +39,20 @@ $shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     left: $l;
 }
 
+@mixin flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin grid($gap, $i) {
     display: grid;
     grid-gap: $gap;
     grid-template-columns: repeat($i, minmax(0px, 1fr));
+}
+
+@mixin style-b55 {
+    background-color: $clr-gray_37;
+    border: 1px solid $clr-gray_55;
+    border-radius: 5px;
 }

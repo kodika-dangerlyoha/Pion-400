@@ -26,3 +26,7 @@ const show_pari = () => {
         document.querySelector('.bettingHistory').classList.add('bettingHistory_hidden');
     }
 }
+
+const toggle_matchBlock = (id) => {
+    document.querySelector(`#match_block-${id}`).classList.toggle('matchBlock_closed');
+}

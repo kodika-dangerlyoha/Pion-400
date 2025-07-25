@@ -2,6 +2,8 @@
 @use "comparisonPlayer";
 @use "maps";
 @use "meetings";
+@use "tab";
+@use "logs";
 
 .matchBlock {
     position: relative;
@@ -115,7 +117,6 @@
             & > img {
                 position: relative;
                 z-index: 1;
-                width: 50%;
             }
             & > div._center {
                 position: absolute;
@@ -247,6 +248,28 @@
                 font-weight: 700;
                 color: #B8B8B8;
             }
+            &__pick {
+                padding: {
+                    top: 3px;
+                    bottom: 3px;
+                    left: 6px;
+                    right: 6px;
+                };
+
+                border-radius: 6px;
+                background-color: base.$clr-main_red;
+
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &__map {
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 5px;
+                text-align: center;
+            }
             &__score {
                 font-size: 38px;
                 font-weight: 700;
@@ -290,6 +313,56 @@
                             transform: skew(-20deg, 0deg) translateX(3px);
                         }
                     }
+                }
+            }
+            &__roundHistory {
+                margin-top: 0px;
+                &__line {
+                    display: grid;
+                    grid-template-columns: 1fr 2px 1fr;
+                    gap: 2px;
+                    &__part {
+                        display: flex;
+                        gap: 2px;
+                        & > div {
+                            width: 100%;
+                            height: 16px;
+                            border-radius: 4px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            & > svg {
+                                width: 100%;
+                                height: 100%;
+                                filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+                                & > path {
+
+                                }
+                            }
+                        }
+                        &_yellow > div._active path{
+                            fill: base.$clr-cs-yellow;
+                        }
+                        &_blue > div._active path{
+                            fill: base.$clr-cs-blue;
+                        }
+                    }
+                    &__separator {
+                        background-color: rgba(255, 255, 255, 0.6);
+                    }
+                    &:nth-child(1) &__separator {
+                        transform: translateY(2px);
+                    }
+                    &:nth-last-child(1) &__separator {
+                        transform: translateY(-2px);
+                    }
+                }
+                &__separator {
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    width: 100%;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
                 }
             }
             &__coefs {
@@ -378,6 +451,31 @@
             font-size: 18px;
             font-weight: 700;
             text-align: center;
+        }
+        &__line {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    }
+    &_match &__head__bg {
+        & > img {
+            width: 50%;
+        }
+    }
+    &_map &__head {
+        &__bg {
+            display: block;
+            & > img {
+                width: 100%;
+                transform: translateY(-30%);
+            }
+            & > div._center {
+                display: none;
+            }
+        }
+        &__status {
+            display: none;
         }
     }
     &_closed &__stats{

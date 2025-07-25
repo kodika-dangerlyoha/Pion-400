@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Предматчевая Статистика</title>
+	<link rel="stylesheet" href="css\main.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="inner">
+			<div class="header__logo">
+				<img src="img/logos/logoGS 2.png" alt="">
+				<div class="header-separator"></div>
+			</div>
+			<div class="header__center">
+				<nav class="header__center__nav">
+					<a href="#" class="txt">Спорт</a>
+					<a href="#" class="txt">Киберспорт</a>
+					<a href="#" class="txt">Live</a>
+					<a href="#" class="txt">Результаты</a>
+				</nav>
+				<div class="header__balance">
+					<div class="header__balance__title">
+						<span class="header__balance__title__balance txt">Баланс</span>
+						<span class="header__balance__title__replenish txt">Пополнить</span>
+						<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="11" height="11" rx="1.71111" fill="#3D3D3D"/>
+							<rect class="rect-p" x="3" y="5" width="5" height="1" fill="#D9D9D9"/>
+							<rect class="rect-p" x="5" y="3" width="1" height="5" fill="#D9D9D9"/>
+						</svg>
+					</div>
+					<div class="header__balance__value">
+						<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.48279 1L17.5168 16M7.57955 6.76137C7.11399 7.21133 6.82748 7.82433 6.82748 8.5C6.82748 9.88075 8.02396 11 9.49981 11C10.2325 11 10.8963 10.7242 11.379 10.2775M4.60053 4.03929C2.90867 5.08362 1.62 6.65328 1 8.5C2.13508 11.8809 5.51141 14.3333 9.49999 14.3333C11.2717 14.3333 12.9225 13.8495 14.3098 13.0153M8.60903 2.70782C8.90209 2.68061 9.19935 2.66667 9.49999 2.66667C13.4886 2.66667 16.865 5.11909 18 8.5C17.75 9.245 17.391 9.94483 16.9407 10.5833" stroke="#8a8a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="txt">879.43₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__right">
+				<div class="header-separator"></div>
+				<nav class="header__right__nav">
+					<a href="">
+						<svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.4994 1.31696e-07C14.5465 -0.000270943 15.5536 0.417937 16.3117 1.16789C17.0698 1.91784 17.5208 2.94198 17.5711 4.02791C19.4605 4.85904 21.0723 6.24949 22.2054 8.02572C23.3385 9.80195 23.9426 11.8853 23.9425 14.0158V20.1088C24.7742 20.1761 25.5509 20.5665 26.1176 21.2021C26.6843 21.8377 26.9994 22.6718 27 23.5379C26.9987 24.4501 26.6487 25.3245 26.0269 25.9689C25.405 26.6133 24.5623 26.975 23.6837 26.9747H3.31508C2.4364 26.975 1.59357 26.6131 0.971909 25.9683C0.350248 25.3236 0.00065347 24.4489 0 23.5367C0.000578548 22.6709 0.315531 21.8371 0.882023 21.2017C1.44852 20.5664 2.2249 20.1761 3.05628 20.1088V14.0158C3.05628 9.60019 5.62084 5.69895 9.42886 4.02791C9.4792 2.9422 9.93003 1.91824 10.6879 1.16833C11.4457 0.418412 12.4525 5.77971e-05 13.4994 1.31696e-07ZM11.0864 6.20692C9.49374 6.73786 8.10459 7.78017 7.11921 9.18359C6.13383 10.587 5.60312 12.2791 5.60359 14.0158V20.3622C5.60359 21.6762 4.57702 22.7434 3.31138 22.7434C3.10893 22.744 2.91497 22.8278 2.77182 22.9765C2.62867 23.1251 2.54796 23.3265 2.54731 23.5367C2.54731 23.9742 2.88991 24.33 3.31631 24.33H23.6837C24.1076 24.33 24.4527 23.973 24.4527 23.5367C24.4527 23.1016 24.1076 22.7434 23.6886 22.7434C23.3875 22.7437 23.0893 22.6824 22.811 22.5629C22.5328 22.4434 22.28 22.2681 22.0671 22.0471C21.8541 21.826 21.6853 21.5635 21.5702 21.2746C21.4552 20.9857 21.3961 20.6761 21.3964 20.3635V14.0171C21.3967 12.28 20.8658 10.5878 19.8802 9.18417C18.8946 7.78055 17.5053 6.73805 15.9124 6.20692L15.0288 5.91263V4.22751C15.0288 3.80672 14.8678 3.40316 14.5812 3.10562C14.2946 2.80807 13.9059 2.64092 13.5006 2.64092C13.0953 2.64092 12.7066 2.80807 12.4201 3.10562C12.1335 3.40316 11.9725 3.80672 11.9725 4.22751V5.91135L11.0864 6.20692ZM8.65987 26.9747H11.2072C11.2072 27.2872 11.2665 27.5967 11.3817 27.8855C11.4969 28.1742 11.6657 28.4366 11.8785 28.6575C12.0914 28.8785 12.3441 29.0538 12.6222 29.1734C12.9003 29.293 13.1984 29.3546 13.4994 29.3546C13.8004 29.3546 14.0985 29.293 14.3766 29.1734C14.6547 29.0538 14.9074 28.8785 15.1202 28.6575C15.3331 28.4366 15.5019 28.1742 15.6171 27.8855C15.7323 27.5967 15.7916 27.2872 15.7916 26.9747H18.3401C18.3401 28.3075 17.8302 29.5857 16.9225 30.5281C16.0148 31.4705 14.7837 32 13.5 32C12.2163 32 10.9852 31.4705 10.0775 30.5281C9.16981 29.5857 8.65987 28.3075 8.65987 26.9747Z" fill="white"/>
+						</svg>
+					</a>
+					<a href="">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2003_4806)">
+								<path d="M16 32C11.7262 32 7.70831 30.3357 4.68625 27.3137C1.66419 24.2918 0 20.2738 0 16C0 11.7262 1.66431 7.70831 4.68625 4.68625C7.70819 1.66419 11.7262 0 16 0C20.2738 0 24.2917 1.66431 27.3137 4.68625C30.3358 7.70819 32 11.7262 32 16C32 20.2738 30.3357 24.2917 27.3137 27.3137C24.2918 30.3358 20.2738 32 16 32ZM16 2.5C8.55606 2.5 2.5 8.55606 2.5 16C2.5 23.4439 8.55606 29.5 16 29.5C23.4439 29.5 29.5 23.4439 29.5 16C29.5 8.55606 23.4439 2.5 16 2.5ZM15.9375 17.1875C12.6291 17.1875 9.9375 14.4959 9.9375 11.1875C9.9375 7.87906 12.6291 5.1875 15.9375 5.1875C19.2459 5.1875 21.9375 7.87906 21.9375 11.1875C21.9375 14.4959 19.2459 17.1875 15.9375 17.1875ZM15.9375 7.6875C14.0076 7.6875 12.4375 9.25762 12.4375 11.1875C12.4375 13.1174 14.0076 14.6875 15.9375 14.6875C17.8674 14.6875 19.4375 13.1174 19.4375 11.1875C19.4375 9.25762 17.8674 7.6875 15.9375 7.6875ZM23.857 24.467C24.3911 24.0296 24.4694 23.242 24.032 22.7079C22.2644 20.5501 19.6528 19.3125 16.8666 19.3125H15.3834C12.5972 19.3125 9.98556 20.5501 8.21806 22.7079C7.78062 23.242 7.85894 24.0296 8.39306 24.4671C8.92719 24.9046 9.71469 24.8261 10.1522 24.2921C11.4428 22.7163 13.3496 21.8125 15.3834 21.8125H16.8666C18.9004 21.8125 20.8072 22.7162 22.0979 24.2921C22.2151 24.4354 22.3627 24.5509 22.5301 24.6301C22.6975 24.7093 22.8804 24.7503 23.0656 24.75C23.3443 24.75 23.6247 24.6573 23.857 24.467Z" fill="white"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_2003_4806">
+							<rect width="32" height="32" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div onclick="toggle_fav()">
+						<svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M29.9393 0.942977C25.8498 -1.02588 20.6805 0.181037 17.791 3.69968L29.9393 0.942977ZM17.791 3.69968C14.906 0.181037 9.75591 -1.02435 5.64121 0.941453L5.63528 0.944501C3.0647 2.18799 1.12157 4.42505 0.354698 7.30976C-0.41069 10.1945 0.0387526 13.5653 1.93591 17.0413C4.4872 21.7394 8.92526 25.2992 15.9458 30.9299L16.8758 31.6766C17.1366 31.8858 17.4579 31.9995 17.7888 31.9995C18.1196 31.9995 18.441 31.8858 18.7018 31.6766L19.6318 30.9299C26.6508 25.3007 31.0889 21.7409 33.6402 17.0443C35.5536 13.5699 36.0135 10.1975 35.2481 7.30976C34.4797 4.42048 32.5247 2.18494 29.9393 0.942977M28.6829 3.7012C25.2387 2.04474 20.7013 3.6372 19.1378 7.15127C19.0197 7.41689 18.8297 7.64203 18.5905 7.79989C18.3513 7.95775 18.0731 8.04167 17.7888 8.04167C17.5045 8.04167 17.2262 7.95775 16.987 7.79989C16.7479 7.64203 16.5579 7.41689 16.4397 7.15127C14.8778 3.63872 10.373 2.04322 6.89461 3.70273C5.05976 4.59115 3.73961 6.14399 3.216 8.11284C2.69388 10.0832 2.92972 12.6327 4.52428 15.5524L4.52576 15.5555C6.73293 19.6197 10.5984 22.7695 17.7895 28.542C24.9791 22.7695 28.8446 19.6197 31.0518 15.5555L31.0562 15.5463C32.6656 12.6266 32.9074 10.0787 32.3853 8.11284C31.8632 6.14704 30.5371 4.59268 28.6844 3.70273H28.6815L28.6829 3.7012Z" fill="white"/>
+						</svg>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="inner inner_threeSec">
+			<aside class="navigation">
+				<div class="navigation__search">
+					<input type="text" class="navigation__search txt" placeholder="Поиск">
+					<button title="search" type="button" class="search flex-center">
+						<svg  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+					<button title="clear" type="button" class="close flex-center">
+						<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.6636 0.345766C12.2821 -0.0358037 11.6657 -0.0358037 11.2841 0.345766L6.4998 5.12028L1.7155 0.335982C1.33393 -0.0455878 0.717552 -0.0455878 0.335982 0.335982C-0.0455878 0.717552 -0.0455878 1.33393 0.335982 1.7155L5.12028 6.4998L0.335982 11.2841C-0.0455878 11.6657 -0.0455878 12.2821 0.335982 12.6636C0.717552 13.0452 1.33393 13.0452 1.7155 12.6636L6.4998 7.87933L11.2841 12.6636C11.6657 13.0452 12.2821 13.0452 12.6636 12.6636C13.0452 12.2821 13.0452 11.6657 12.6636 11.2841L7.87933 6.4998L12.6636 1.7155C13.0354 1.34372 13.0354 0.717552 12.6636 0.345766Z" fill="#AAAAAA"/>
+						</svg>
+					</button>
+				</div>
+				<div class="navigation__games">
+					<div class="navigation__games__game navigation__games__game_active" id="nav_games_cs2">
+						<div class="navigation__games__game__head def-list_head" onclick="show_tournament('cs2')">
+							<img src="img/games/logos/cs.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Counter-Strike 2</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__container">
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament navigation__games__game__tournament_active">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+						</div>
+					</div>
+					<div class="navigation__games__game" id="nav_games_dota">
+						<div class="navigation__games__game__head def-list_head" onclick="show_tournament('dota')">
+							<img src="img/games/logos/dota.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Dota 2</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__container">
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">ESEA Season 49: Advanced Division - Europe</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+						</div>
+					</div>
+					<div class="navigation__games__game" id="nav_games_valorant">
+						<div class="navigation__games__game__head def-list_head" onclick="show_tournament('valorant')">
+							<img src="img/games/logos/valorant.png" alt="">
+							<div class="navigation__games__game__head__titleGame txt">Valorant</div>
+							<div class="navigation__games__game__head__point flex-center txt">32</div>
+							<div class="navigation__games__game__head__arrow flex-center">
+								<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+						<div class="navigation__games__game__container">
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+							<div class="navigation__games__game__tournament">
+								<div class="navigation__games__game__tournament__icon">
+									<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -4679.000000)" fill="#000000">
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+										<path d="M298.5,4531 L298.75,4529 L301.333,4529 L300.895,4530.316 C300.758,4530.725 300.376,4531 299.946,4531 L298.5,4531 Z M291.641,4532.124 L290.25,4521 L297.75,4521 L296.359,4532.124 C296.297,4532.624 295.872,4533 295.367,4533 L292.633,4533 C292.128,4533 291.703,4532.624 291.641,4532.124 L291.641,4532.124 Z M287.105,4530.316 L286.667,4529 L289.25,4529 L289.5,4531 L288.054,4531 C287.624,4531 287.242,4530.725 287.105,4530.316 L287.105,4530.316 Z M297,4539 L297,4537 L295,4537 L295,4535 L296.234,4535 C297.243,4535 298.094,4534.249 298.219,4533.248 L298.25,4533 L300.558,4533 C301.419,4533 302.184,4532.449 302.456,4531.632 L304,4527 L299,4527 L300,4519 L288,4519 L289,4527 L284,4527 L285.544,4531.632 C285.816,4532.449 286.581,4533 287.442,4533 L289.75,4533 L289.781,4533.248 C289.906,4534.249 290.757,4535 291.766,4535 L293,4535 L293,4537 L291,4537 L291,4539 L297,4539 Z" id="cup-[#801]">
+										
+										</path>
+										</g>
+										</g>
+										</g>
+									</svg>
+								</div>
+								<div class="navigation__games__game__tournament__title txt">CCT Season 2 European Series #3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<section class="centerBlock">
+				<div class="matchBlock matchBlock_match" id="match_block-13">
+					<div class="matchBlock__head">
+						<div class="matchBlock__head__status matchBlock__head__status_date txt">16 October 18:00</div>
+						<div class="matchBlock__head__interface">
+                            <button title="favorite-btn" class="_fav flex-center" type="button">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.08103 12.4489L11.2948 20.4013C11.5777 20.6752 11.7192 20.8121 11.886 20.8459C11.9611 20.8611 12.0384 20.8611 12.1135 20.8459C12.2803 20.8121 12.4217 20.6752 12.7047 20.4013L20.9184 12.4489C23.2294 10.2115 23.51 6.52949 21.5664 3.94756L21.201 3.46207C18.8758 0.373344 14.2085 0.891343 12.5747 4.41947C12.3439 4.91784 11.6556 4.91784 11.4248 4.41947C9.79101 0.891343 5.12372 0.373344 2.79853 3.46208L2.43306 3.94756C0.489394 6.52949 0.770033 10.2115 3.08103 12.4489Z" stroke="#737373" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <button title="toggle-btn" class="_stat flex-center" type="button" onclick="toggle_matchBlock(13)">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.821138 21.8566H3.72944C4.10401 21.8566 4.408 21.5533 4.408 21.1781V16.2151C4.408 15.8399 4.10401 15.5365 3.72944 15.5365H0.821138C0.446573 15.5365 0.142578 15.8399 0.142578 16.2151V21.1781C0.142578 21.5527 0.446573 21.8566 0.821138 21.8566ZM1.4997 16.893H3.05088V20.4989H1.4997V16.893Z" fill="#737373"/>
+                                    <path d="M9.54585 21.8567C9.92041 21.8567 10.2244 21.5534 10.2244 21.1782V7.1727C10.2244 6.79746 9.92041 6.49414 9.54585 6.49414H6.63754C6.26298 6.49414 5.95898 6.79746 5.95898 7.1727V21.1782C5.95898 21.5534 6.26298 21.8567 6.63754 21.8567H9.54585ZM7.3161 7.85126H8.86729V20.4996H7.3161V7.85126Z" fill="#737373"/>
+                                    <path d="M15.3635 21.8571C15.7381 21.8571 16.0421 21.5538 16.0421 21.1785V11.8123C16.0421 11.4371 15.7381 11.1338 15.3635 11.1338H12.4559C12.0813 11.1338 11.7773 11.4371 11.7773 11.8123V21.1785C11.7773 21.5538 12.0813 21.8571 12.4559 21.8571H15.3635ZM13.1345 12.4909H14.6856V20.4999H13.1345V12.4909Z" fill="#737373"/>
+                                    <path d="M17.5918 0.821138V21.1779C17.5918 21.5532 17.8958 21.8565 18.2704 21.8565H21.1787C21.5532 21.8565 21.8572 21.5532 21.8572 21.1779V0.821138C21.8572 0.445894 21.5532 0.142578 21.1787 0.142578H18.2704C17.8958 0.142578 17.5918 0.445894 17.5918 0.821138ZM18.9489 1.4997H20.5001V20.4994H18.9489V1.4997Z" fill="#737373"/>
+                                </svg>
+                                <span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+						<div class="matchBlock__head__bg">
+							<img src="img/flags/ru.png" alt="">
+                            <img src="img/flags/dk.png" alt="">
+                            <div class="_center"></div>
+                            <div class="_bottom"></div>
+						</div>
+						<div class="matchBlock__head__team">
+							<div class="matchBlock__head__team__logo flex-center">
+								<img class="def-optimize_img" src="img/teams/logos/spirit.webp" alt="">
+							</div>
+							<div class="matchBlock__head__team__info">
+								<!-- <div class="matchBlock__head__team__info__inner"> -->
+									<div class="matchBlock__head__team__info__title txt">Team Spirit</div>
+									<div class="matchBlock__head__team__info__separator serHov _forHover"></div>
+									<div class="matchBlock__head__team__info__rating ratHov _forHover txt"><span class="_value">Valve Ranking</span><span class="_key">#2</span></div>
+									<div class="matchBlock__head__team__info__separator"></div>
+									<div class="matchBlock__head__team__info__rating txt"><span class="_value">World Ranking</span><span class="_key">#3</span></div>
+								<!-- </div> -->
+							</div>
+						</div>
+						<div class="matchBlock__head__center">
+							<div class="matchBlock__head__center__top txt">
+								<div class="matchBlock__head__center__tournament"><img src="img/games/logos/cs.png" alt=""><span>CCT Season 2 European Series #3</span></div>
+                                <div class="matchBlock__head__center__this">Матч</div>
+                                <div class="matchBlock__head__center__score"><span>0</span>:<span>0</span></div>
+							</div>
+							<div class="matchBlock__head__center__bottom">
+								<div class="matchBlock__head__center__percentages">
+									<div class="matchBlock__head__center__percentages__values">
+										<div class="txt">30%</div>
+										<div class="txt">70%</div>
+									</div>
+									<div class="matchBlock__head__center__percentages__range">
+										<div class="matchBlock__head__center__percentages__range__filling">
+											<div class="matchBlock__head__center__percentages__range__filling__point"></div>
+										</div>
+									</div>
+								</div>
+								<div class="matchBlock__head__center__coefs">
+                                    <button type="button" class="matchBlock__head__center__coefs__button txt">
+                                        <span>x</span>
+                                        2.33
+                                        <div>
+                                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 3.99995H6.5V2.99995C6.5 1.61995 5.38 0.499947 4 0.499947C2.62 0.499947 1.5 1.61995 1.5 2.99995V3.99995H1C0.45 3.99995 0 4.44995 0 4.99995V9.99995C0 10.5499 0.45 10.9999 1 10.9999H7C7.55 10.9999 8 10.5499 8 9.99995V4.99995C8 4.44995 7.55 3.99995 7 3.99995ZM4 8.49995C3.45 8.49995 3 8.04995 3 7.49995C3 6.94995 3.45 6.49995 4 6.49995C4.55 6.49995 5 6.94995 5 7.49995C5 8.04995 4.55 8.49995 4 8.49995ZM2.5 3.99995V2.99995C2.5 2.16995 3.17 1.49995 4 1.49995C4.83 1.49995 5.5 2.16995 5.5 2.99995V3.99995H2.5Z" fill="#777777"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="matchBlock__head__center__coefs__button matchBlock__head__center__coefs__button_closed txt">
+                                        <span>x</span>
+                                        1.05
+                                        <div>
+                                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 3.99995H6.5V2.99995C6.5 1.61995 5.38 0.499947 4 0.499947C2.62 0.499947 1.5 1.61995 1.5 2.99995V3.99995H1C0.45 3.99995 0 4.44995 0 4.99995V9.99995C0 10.5499 0.45 10.9999 1 10.9999H7C7.55 10.9999 8 10.5499 8 9.99995V4.99995C8 4.44995 7.55 3.99995 7 3.99995ZM4 8.49995C3.45 8.49995 3 8.04995 3 7.49995C3 6.94995 3.45 6.49995 4 6.49995C4.55 6.49995 5 6.94995 5 7.49995C5 8.04995 4.55 8.49995 4 8.49995ZM2.5 3.99995V2.99995C2.5 2.16995 3.17 1.49995 4 1.49995C4.83 1.49995 5.5 2.16995 5.5 2.99995V3.99995H2.5Z" fill="#777777"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+							</div>
+						</div>
+						<div class="matchBlock__head__team">
+							<div class="matchBlock__head__team__logo flex-center">
+								<img class="def-optimize_img" src="img/teams/logos/faze.png" alt="">
+							</div>
+							<div class="matchBlock__head__team__info">
+								<!-- <div class="matchBlock__head__team__info__inner"> -->
+									<div class="matchBlock__head__team__info__title txt">Faze</div>
+									<div class="matchBlock__head__team__info__separator serHov _forHover"></div>
+									<div class="matchBlock__head__team__info__rating ratHov _forHover txt"><span class="_value">Valve Ranking</span><span class="_key">#4</span></div>
+									<div class="matchBlock__head__team__info__separator"></div>
+									<div class="matchBlock__head__team__info__rating txt"><span class="_value">World Ranking</span><span class="_key">#5</span></div>
+								<!-- </div> -->
+							</div>
+						</div>
+					</div>
+					<div class="matchBlock__stats">
+						<section class="comparisonPlayer">
+							<h4 class="matchBlock__stats__h4 txt">Сравнение статистики игроков</h4>
+							<div class="comparisonPlayer__ftf">
+								<div class="comparisonPlayer__ftf__top">
+									<div class="comparisonPlayer__ftf__player">
+										<div class="comparisonPlayer__ftf__player__avatar">
+											<img class="_avatar" src="img/teams/players/big/magixx.png" alt="">
+											<img class="_flag" src="img/flags/ru.png" alt="">
+											<img class="_team" src="img/teams/logos/spirit.webp" alt="">
+										</div>
+										<div class="comparisonPlayer__ftf__player__nickname txt">Леонид <span>'magixx'</span> Чоппер</div>
+									</div>
+									<div class="comparisonPlayer__ftf__stats">
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Огневая мощь</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Энтринг</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Опенинг</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Снайпинг</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Трэйдинг</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Клатчи</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__stats__block">
+											<div class="comparisonPlayer__ftf__stats__block__head txt">
+												<div class="comparisonPlayer__ftf__stats__block__head__value">70</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__title">Гранаты</div>
+												<div class="comparisonPlayer__ftf__stats__block__head__value">28</div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csBlue">
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+											</div>
+											<div class="comparisonPlayer__ftf__stats__block__range comparisonPlayer__ftf__stats__block__range_csYellow">
+												<div class="comparisonPlayer__ftf__stats__block__range__small" style="width: 40%;"></div>
+												<div class="comparisonPlayer__ftf__stats__block__range__filling" style="width: 60%;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="comparisonPlayer__ftf__player">
+										<div class="comparisonPlayer__ftf__player__avatar">
+											<img class="_avatar" src="img/teams/players/big/karrigan.png" alt="">
+											<img class="_flag" src="img/flags/dk.png" alt="">
+											<img class="_team" src="img/teams/logos/faze.png" alt="">
+										</div>
+										<div class="comparisonPlayer__ftf__player__nickname txt">Finn <span>'karrigan'</span> Andersen </div>
+									</div>
+								</div>
+								<div class="comparisonPlayer__ftf__avg">
+									<div class="comparisonPlayer__ftf__avg__gridLine">
+										<div class="comparisonPlayer__ftf__avg__gridLine__innerGrid comparisonPlayer__ftf__avg__gridLine__innerGrid_left">
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">1.34</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Rating 2.0</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">0.66</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">DRP</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__avg__gridLine__center"></div>
+										<div class="comparisonPlayer__ftf__avg__gridLine__innerGrid comparisonPlayer__ftf__avg__gridLine__innerGrid_right">
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">1.34</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Rating 2.0</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">0.66</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">DRP</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comparisonPlayer__ftf__avg__gridLine">
+										<div class="comparisonPlayer__ftf__avg__gridLine__innerGrid comparisonPlayer__ftf__avg__gridLine__innerGrid_left">
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">70.4%</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Kast</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">1.45</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Impact</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">102.7</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">ADR</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">0.64</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">KPR</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+										</div>
+										<div class="comparisonPlayer__ftf__avg__gridLine__center"><div class="comparisonPlayer__ftf__avg__separator"></div></div>
+										<div class="comparisonPlayer__ftf__avg__gridLine__innerGrid comparisonPlayer__ftf__avg__gridLine__innerGrid_right">
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">70.4%</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Kast</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">1.45</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">Impact</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">102.7</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">ADR</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+											<div class="comparisonPlayer__ftf__avg__block txt">
+												<div class="comparisonPlayer__ftf__avg__block__value">0.64</div>
+												<div class="comparisonPlayer__ftf__avg__block__key">KPR</div>
+												<div class="comparisonPlayer__ftf__avg__block__range">
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__section _active"></div>
+													<div class="comparisonPlayer__ftf__avg__block__range__point"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comparisonPlayer__separator"></div>
+							<div class="comparisonPlayer__players">
+                                <div class="comparisonPlayer__players__team comparisonPlayer__players__team_yellow">
+                                    <div class="comparisonPlayer__players__team__player comparisonPlayer__players__team__player_active">
+                                        <img src="img/teams/players/big/chopper.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__team">
+                                        <img src="img/teams/logos/spirit.webp" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info comparisonPlayer__players__team__player__info_team">
+                                            <div class="comparisonPlayer__players__team__player__title txt">Team Spirit</div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator serHov"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating ratHov txt"><span class="_value">Valve Ranking</span><span class="_key">#2</span></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">World Ranking</span><span class="_key">#3</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/chopper.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/chopper.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/chopper.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/chopper.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comparisonPlayer__players__separator"></div>
+                                <div class="comparisonPlayer__players__team comparisonPlayer__players__team_blue">
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/frozen.webp" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__team">
+                                        <img src="img/teams/logos/faze.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info comparisonPlayer__players__team__player__info_team">
+                                            <div class="comparisonPlayer__players__team__player__title txt">Faze</div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator serHov"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating ratHov txt"><span class="_value">Valve Ranking</span><span class="_key">#2</span></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">World Ranking</span><span class="_key">#3</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player comparisonPlayer__players__team__player_active">
+                                        <img src="img/teams/players/big/broky.webp" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/karrigan.png" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/frozen.webp" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparisonPlayer__players__team__player">
+                                        <img src="img/teams/players/big/broky.webp" alt="">
+                                        <div class="comparisonPlayer__players__team__player__info">
+                                            <div class="comparisonPlayer__players__team__player__nickname txt"><span>magixx</span><img src="img/flags/f1.png" alt=""></div>
+                                            <div class="comparisonPlayer__players__team__player__info__separator"></div>
+                                            <div class="comparisonPlayer__players__team__player__rating txt"><span class="_value">Rating 2.0</span><span class="_key">1.31</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</section>
+						<section class="maps">
+							<h4 class="matchBlock__stats__h4 txt">Статистика по картам</h4>
+                            <div class="maps__head">
+                                <div class="maps__head__title">
+                                    <div class="maps__head__title__flag maps__head__title__flag_left"></div>
+                                    <div class="maps__head__title__flag maps__head__title__flag_right"></div>
+                                    <div class="maps__head__title__img">
+                                        <img class="def-optimize_img" src="img/teams/logos/spirit.webp" alt="">
+                                    </div>
+                                    <div class="txt">Пул карт</div>
+                                    <div class="maps__head__title__img">
+                                        <img class="def-optimize_img" src="img/teams/logos/faze.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="maps__head__key">
+                                    <div class="maps__head__key__top txt">Процент выбора</div>
+                                    <div class="maps__head__key__teams">
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(0)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/spirit.webp" alt="">
+                                        </div>
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(1)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/faze.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="maps__head__key">
+                                    <div class="maps__head__key__top txt">Процент выбора</div>
+                                    <div class="maps__head__key__teams">
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(2)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/spirit.webp" alt="">
+                                        </div>
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(3)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/faze.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="maps__head__key">
+                                    <div class="maps__head__key__top txt">Процент выбора</div>
+                                    <div class="maps__head__key__teams">
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(4)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/spirit.webp" alt="">
+                                        </div>
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(5)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/faze.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="maps__head__key">
+                                    <div class="maps__head__key__top txt">Процент выбора</div>
+                                    <div class="maps__head__key__teams">
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(6)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/spirit.webp" alt="">
+                                        </div>
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(7)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/faze.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="maps__head__key">
+                                    <div class="maps__head__key__top txt">Процент выбора</div>
+                                    <div class="maps__head__key__teams">
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(8)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/spirit.webp" alt="">
+                                        </div>
+                                        <div class="maps__head__key__teams__team" onmouseover="scope_map(9)" onmouseout="unscope_map()">
+                                            <img src="img/teams/logos/faze.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_mir">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/mir.png" alt="">
+                                    <div class="maps__row__map__title txt">Mirage</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_inf">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/inferno.png" alt="">
+                                    <div class="maps__row__map__title txt">Inferno</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_ver">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/ver.png" alt="">
+                                    <div class="maps__row__map__title txt">Vertigo</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_anc">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/anc.png" alt="">
+                                    <div class="maps__row__map__title txt">Ancient</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_anub">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/anub.png" alt="">
+                                    <div class="maps__row__map__title txt">Anubis</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_d2">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/d2.png" alt="">
+                                    <div class="maps__row__map__title txt">Dust 2</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                            <div class="maps__row maps__row_nuke">
+                                <div class="maps__row__map">
+                                    <img src="img/games/cs2/maps/nuke.png" alt="">
+                                    <div class="maps__row__map__title txt">Nuke</div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(0)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(1)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(2)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(3)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(4)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(5)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(6)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(7)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                                <div class="maps__row__values">
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(8)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_blue"></div></div>
+                                    <div class="maps__row__values__value txt" onmouseover="scope_map(9)" onmouseout="unscope_map()">45% <div class="_map"></div><div class="_team _team_yellow"></div></div>
+                                </div>
+                            </div>
+                        </section>
+						<section class="meetings">
+                            <div class="meetings__team txt">
+                                <div class="meetings__team__title">Team Spirit<span>#4</span></div>
+                                <div class="meetings__team__logo"><img class="def-optimize_img" src="img/teams/logos/spirit.webp" alt=""></div> 
+                                <div class="meetings__team__stats">
+                                    <div>
+                                        <span>9</span>	
+                                        <span>Побед</span>
+                                    </div>
+                                    <span>/</span>
+                                    <div>
+                                        <span>14</span>	
+                                        <span>Матчей</span>
+                                    </div>
+                                </div>
+                                <div class="meetings__team__range">
+                                    <div class="meetings__team__range__section _active"></div>
+                                    <div class="meetings__team__range__section"></div>
+                                    <div class="meetings__team__range__section"></div>
+                                    <div class="meetings__team__range__point"></div>
+                                </div>
+                            </div>
+                            <div class="meetings__center">
+                                <div class="meetings__header txt">
+                                    <button class="meetings__header__button meetings__header__button_hth meetings__header__button_active txt" type="button" onclick="toggle_match_stat('hth')">Статистика личных встреч</button>
+                                    <button class="meetings__header__button meetings__header__button_lustMatches txt" type="button" onclick="toggle_match_stat('lustMatches')">Статистика последних матчей</button>
+                                </div>
+                                <div class="meetings__hth meetings__hth_active">
+                                    <div class="meetings__hth__match">
+                                        <div class="meetings__hth__match__map txt">
+                                            <div class="meetings__hth__match__map__left">
+                                                <div class="meetings__hth__match__map__date">20/5 24</div>
+                                                <div class="meetings__hth__match__map__tournament">EPL World Series Americas Season 8</div>
+                                            </div>
+                                            <div class="meetings__hth__match__map__right">
+                                                <div class="meetings__hth__match__map__map">Nuke</div>
+                                                <div class="meetings__hth__match__map__score"><span class="_green">00</span>-<span class="_red">00</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meetings__hth__match">
+                                        <div class="meetings__hth__match__map txt">
+                                            <div class="meetings__hth__match__map__left">
+                                                <div class="meetings__hth__match__map__date">20/5 24</div>
+                                                <div class="meetings__hth__match__map__tournament">EPL World Series Americas Season 8</div>
+                                            </div>
+                                            <div class="meetings__hth__match__map__right">
+                                                <div class="meetings__hth__match__map__map">Inferno</div>
+                                                <div class="meetings__hth__match__map__score"><span class="_green">13</span>-<span class="_red">10</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__hth__match__map txt">
+                                            <div class="meetings__hth__match__map__left">
+                                                <div class="meetings__hth__match__map__date">20/5 24</div>
+                                                <div class="meetings__hth__match__map__tournament">EPL World Series Americas Season 8</div>
+                                            </div>
+                                            <div class="meetings__hth__match__map__right">
+                                                <div class="meetings__hth__match__map__map">Ancient</div>
+                                                <div class="meetings__hth__match__map__score"><span class="_green">4</span>-<span class="_red">13</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__hth__match__map txt">
+                                            <div class="meetings__hth__match__map__left">
+                                                <div class="meetings__hth__match__map__date">20/5 24</div>
+                                                <div class="meetings__hth__match__map__tournament">EPL World Series Americas Season 8</div>
+                                            </div>
+                                            <div class="meetings__hth__match__map__right">
+                                                <div class="meetings__hth__match__map__map">Mirage</div>
+                                                <div class="meetings__hth__match__map__score"><span class="_green">13</span>-<span class="_red">5</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meetings__hth__match">
+                                        <div class="meetings__hth__match__map txt">
+                                            <div class="meetings__hth__match__map__left">
+                                                <div class="meetings__hth__match__map__date">20/5 24</div>
+                                                <div class="meetings__hth__match__map__tournament">EPL World Series Americas Season 8</div>
+                                            </div>
+                                            <div class="meetings__hth__match__map__right">
+                                                <div class="meetings__hth__match__map__map">Ancient</div>
+                                                <div class="meetings__hth__match__map__score"><span class="_green">4</span>-<span class="_red">13</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meetings__lustMatches">
+                                    <div class="meetings__lustMatches__left">
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _green txt"><span>2</span>-<span>1</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _red txt"><span>1</span>-<span>2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _red txt"><span>0</span>-<span>2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _red txt"><span>0</span>-<span>2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _green txt"><span>2</span>-<span>0</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _red txt"><span>0</span>-<span>2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _green txt"><span>2</span>-<span>0</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meetings__lustMatches__separator"></div>
+                                    <div class="meetings__lustMatches__right">
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _green txt"><span>0</span>-<span>0</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _red txt"><span>0</span>-<span>0</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="meetings__lustMatches__match">
+                                            <div class="meetings__lustMatches__match__left">
+                                                <img src="img/teams/9z.png" alt="">
+                                                <span class="txt">PARIVISION</span>
+                                            </div>
+                                            <div class="meetings__lustMatches__match__right">
+                                                <div class="meetings__lustMatches__match__type txt">BO5</div>
+                                                <div class="meetings__lustMatches__match__score _green txt"><span>0</span>-<span>0</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meetings__team txt">
+                                <div class="meetings__team__title">Faze<span>#4</span></div>
+                                <div class="meetings__team__logo"><img class="def-optimize_img" src="img/teams/logos/faze.png" alt=""></div> 
+                                <div class="meetings__team__stats">
+                                    <div>
+                                        <span>9</span>	
+                                        <span>Побед</span>
+                                    </div>
+                                    <span>/</span>
+                                    <div>
+                                        <span>14</span>	
+                                        <span>Матчей</span>
+                                    </div>
+                                </div>
+                                <div class="meetings__team__range">
+                                    <div class="meetings__team__range__section"></div>
+                                    <div class="meetings__team__range__section _active"></div>
+                                    <div class="meetings__team__range__section"></div>
+                                    <div class="meetings__team__range__point"></div>
+                                </div>
+                            </div>
+                        </section>
+					</div>
+				</div>
+			</section>
+			<aside class="rAside">
+				<div class="rAside__stream">
+					<!-- <img src="img/stream.png" alt=""> -->
+					<iframe title="stream_from_tw" src="https://player.twitch.tv/?channel=rachelr&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="258" width="620"></iframe>
+				</div>
+				<div class="bettingHistory bettingHistory_hidden">
+					<div class="bettingHistory__header txt" onclick="toggle_bettingHistory()">
+						<span>История ставок</span>
+						<div class="flex-center">
+							<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="bettingHistory__list">
+						<div class="bettingHistory__list__topBg"></div>
+						<div class="bettingHistory__list__bottomBg"></div>
+						<div class="_list">
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">AbobA</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Матч</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">NaVi</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">340 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">3.50</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">3.49</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Gru228</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 1</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">WW</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">1485 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.13</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.11</div>
+									</div>
+								</div>
+							</div>
+							<div class="bettingHistory__list__bet txt">
+								<div class="bettingHistory__list__bet__left">
+									<div class="bettingHistory__list__bet__nickname">Nikiti4_pRo</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__mapNum">Карта 3</div>
+									<div class="bettingHistory__list__bet__separator"></div>
+									<div class="bettingHistory__list__bet__team">Team Spirit</div>
+								</div>
+								<div class="bettingHistory__list__bet__right">
+									<div class="bettingHistory__list__bet__info">
+										<div class="bettingHistory__list__bet__info__cash">22954 ₽</div>
+										<span>x</span>
+										<div class="bettingHistory__list__bet__info__coef">1.82</div>
+										<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="bettingHistory__list__bet__info__coef bettingHistory__list__bet__info__coef_new">1.79</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bettingLog">
+					<div class="bettingLog__head" onclick="show_pari()">
+						<span class="txt">Мои пари</span>
+						<div class="flex-center">
+							<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="bettingLog__list">
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/cs.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/valorant.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a class="bettingLog__list__bet bettingLog__list__bet_match">
+							<div class="bettingLog__list__bet__head">
+								<div class="bettingLog__list__bet__head__left txt">
+									<span class="bettingLog__list__bet__id">ID:435667231</span>
+									<div></div>
+									<span class="bettingLog__list__bet__id">10.04.24 <span>12:54</span></span>
+								</div>
+								<div class="bettingLog__list__bet__value txt">
+									<span class="betlog_sum">67560 ₽</span> 
+									<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+										<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+									</svg>
+									<span class="betlog_res">809793 ₽</span>
+								</div>
+							</div>
+							<div class="bettingLog__list__bet__body">
+								<div class="bettingLog__list__bet__body__left">
+									<div class="bettingLog__list__bet__game"><img src="img/games/logos/dota.png" alt=""></div>
+									<div class="bettingLog__list__bet__info txt">
+										<div class="bettingLog__list__bet__info__tournament">BetBoom Dacha Belgrade 2024</div>
+										<div class="bettingLog__list__bet__info__date">12.04.24 <span>13:54</span></div>
+										<div class="bettingLog__list__bet__info__teams"><span>Team Spirit</span> - Mouz</div>
+									</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_profile txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit</div>
+									<div class="bettingLog__list__bet__coef"><span>Карта 1 x</span> 1.83</div>
+									<div class="bettingLog__list__bet__status">Не сыграно</div>
+								</div>
+								<div class="bettingLog__list__bet__body__right bettingLog__list__bet__body__right_match txt">
+									<div class="bettingLog__list__bet__coef">Team Spirit x 1.83</div>
+									<div class="bettingLog__list__bet__value txt">
+										<span class="betlog_sum">67560 ₽</span> 
+										<svg class="svgwinbet" width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 4.49989L1 4.49989M9 4.49989L5.57143 7.99989M9 4.49989L5.57143 0.999893" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<svg class="svglosebet" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="9.5695" height="1.9139" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 6.76709)" fill="#FF5757"/>
+											<rect width="1.9139" height="9.5695" transform="matrix(0.707067 -0.707146 0.707067 0.707146 0 1.35352)" fill="#FF5757"/>
+										</svg>
+										<span class="betlog_res">809793 ₽</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</aside>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

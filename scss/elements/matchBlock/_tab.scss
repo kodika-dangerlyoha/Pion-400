@@ -1,0 +1,173 @@
+@use '../../default/base';
+
+.tab {
+    // width: 100%;
+    display: flex;
+    gap: 10px;
+    &__team {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &_right .tab__player, 
+        &_right .tab__player__nickname, 
+        &_right .tab__player__rating,
+        &_right .tab__player__right,
+        &_right .tab__player__right > div,
+        &_right .tab__head,
+        &_right .tab__head > div {
+            flex-direction: row-reverse;
+        }
+        &_right .tab__player__right {
+            padding-left: 5px;
+            padding-right: 0;
+        }
+    }
+    &__head {
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: base.$clr-gray_43;
+        border: 1px solid base.$clr-gray_55;
+        border-radius: 5px;
+        & > div {
+            display: flex;
+            gap: 7px;
+        }
+        & span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #B8B8B8;
+            &._kd {
+                width: 36px;
+            }
+            &._pm {
+                width: 24px;
+            }
+            &._adr {
+                width: 30px;
+            }
+            &._kast {
+                width: 37px;
+            }
+            &._rat {
+                width: 34px;
+            }
+        }
+    }
+    &__player {
+        background: linear-gradient(to top, rgb(37, 37, 37), rgb(47, 47, 47));
+        // background: rgba(255, 255, 255, 0.1);
+        border: 1px solid base.$clr-gray_55;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
+        &__nickname {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > span {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            & > img {
+                height: 14px;
+                border-radius: 3px;
+            }
+        }
+        &__rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > span {
+                &._value {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                &._key {
+                    font-size: 14px;
+                    color: #B8B8B8;
+                }
+            }
+        }
+        &__left {
+            width: 140px;
+            padding: 5px 5px 5px 5px;
+            background: rgba(255, 255, 255, 0.04);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            &__separator {
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.1);
+                margin: {
+                    top: 5px;
+                    bottom: 5px;
+                };
+                width: 100%;
+            }
+        }
+        &__right {
+            padding: 5px 5px 5px 0px;
+            // height: 100%;
+            display: flex;
+            // border-radius: 5px;
+            // background: linear-gradient(to top, rgb(37, 37, 37), rgb(47, 47, 47));
+            & > div {
+                display: flex;
+                gap: 7px;
+                & > span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: 700;
+                    &._kd {
+                        width: 36px;
+                    }
+                    &._pm {
+                        width: 24px;
+                    }
+                    &._adr {
+                        width: 30px;
+                    }
+                    &._kast {
+                        width: 37px;
+                    }
+                    &._rat {
+                        width: 34px;
+                    }
+                }
+            }
+        }
+    }
+    &_post &__player {
+        transition: .2s;
+        cursor: pointer;
+        &_b {
+            border-color: base.$clr-cs-blue;
+            pointer-events: none;
+            .tab__player__left__separator {
+                background-color: base.$clr-cs-blue;
+            }
+        }
+        &_y {
+            border-color: base.$clr-cs-yellow;
+            pointer-events: none;
+            .tab__player__left__separator {
+                background-color: base.$clr-cs-yellow;
+            }
+        }
+        &:hover {
+            transform: scale(1.01);
+            border-color: #808080;
+        }
+        &:active {
+            transform: scale(0.99);
+        }
+    }
+}

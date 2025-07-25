@@ -30,3 +30,19 @@ const show_pari = () => {
 const toggle_matchBlock = (id) => {
     document.querySelector(`#match_block-${id}`).classList.toggle('matchBlock_closed');
 }
+
+// -------- подсветка линий в статистике карт
+
+const scope_map = (n) => {
+    let z = 0;
+    document.querySelectorAll('.maps__row').forEach(() => {
+        document.querySelectorAll('.maps__row__values__value')[n + z].classList.add('maps__row__values__value_scope');
+        z += 10;
+    })
+}
+
+const unscope_map = () => {
+    document.querySelectorAll('.maps__row__values__value_scope').forEach(el => {
+        el.classList.remove('maps__row__values__value_scope');
+    })
+}

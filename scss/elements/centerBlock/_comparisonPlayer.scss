@@ -87,7 +87,7 @@
                     justify-content: space-between;
                     align-items: end;
                     &__value {
-                        font-size: 14px;
+                        font-size: 16px;
                         font-weight: 700;
                     }
                     &__title {
@@ -140,9 +140,9 @@
                     display: grid;
                     grid-gap: 15px;
                     grid-template-columns: repeat(4, minmax(0px, 1fr));
-                    &_left {
+                    // &_left {
                         
-                    }
+                    // }
                     &_right {
                         direction: rtl;
                         & * {
@@ -220,6 +220,161 @@
             }
         }
     }
+    &__players {
+        display: grid;
+        grid-template-columns: 1fr 2px 1fr;
+        gap: 15px;
+        &__team {
+            @include base.grid(15px, 3);
+            &__player {
+                @include base.style-b55;
+                background-color: base.$clr-gray_37;
+                box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                position: relative;
+                padding-top: 5px;
+                cursor: pointer;
+                transition: .2s;
+                & * {
+                    cursor: pointer;
+                }
+                & > img {
+                    position: relative;
+                    z-index: 2;
+                    // width: 90%;
+                    height: 160px;
+                }
+                &__info {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 5px;
+                    right: 5px;
+                    z-index: 5;
+                    padding: 5px;
+                    background: linear-gradient(to bottom, #2C2C2C, #222222);
+                    border: 1px solid base.$clr-gray_55;
+                    border-radius: 5px;
+                    &__separator {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        width: 100%;
+                        background-color: base.$clr-gray_55;
+                        height: 2px;
+                    }
+                    &_team {
+                        & > .serHov {
+                            height: 0;
+                            opacity: 0;
+                            margin: 0;
+                            transition: .2s;
+                        }
+                        & > .ratHov {
+                            height: 0;
+                            opacity: 0;
+                            transition: .2s;
+                        }
+                        &:hover {
+                            & > .serHov {
+                                height: 2px;
+                                opacity: 1;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+                            & > .ratHov {
+                                height: 16px;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &__nickname {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > span {
+                        font-size: 14px;
+                        font-weight: 700;
+                        display: block;
+                    }
+                    & > img {
+                        display: block;
+                        height: 12px;
+                        border-radius: 2px;
+                    }
+                }
+                &__title {
+                    text-align: center;
+                }
+                &__rating {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > span {
+                        font-size: 14px;
+                    }
+                    & > span._value {
+                        color: #B8B8B8;
+                    }
+                    & > span._key {
+                        
+                    }
+                }
+                &_active {
+                    pointer-events: none;
+                    background-color: base.$clr-gray_55;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    border-color: rgb(95, 95, 95);
+                }
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+            &__team {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+                & > img {
+                    height: 100px;
+                    // height: auto;
+                }
+            }
+            &_yellow &__player_active {
+                background: linear-gradient(to top, rgb(240, 180, 18), transparent);
+                border-color: base.$clr-cs-yellow;
+            }
+            &_yellow &__player_active &__player__info{
+                background: rgba(34, 34, 34, 0.8);
+                -webkit-backdrop-filter: blur(30px);
+                backdrop-filter: blur(30px);
+                border-color: transparent;
+                &__separator {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+            &_blue &__player_active {
+                background: linear-gradient(to top, rgb(41, 144, 216), transparent);
+                border-color: base.$clr-cs-blue;
+            }
+            &_blue &__player_active &__player__info{
+                background: rgba(34, 34, 34, 0.8);
+                -webkit-backdrop-filter: blur(30px);
+                backdrop-filter: blur(30px);
+                border-color: transparent;
+                &__separator {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        &__separator {
+            width: 2px;
+            background-color: base.$clr-gray_55;
+        }
+    }
     &__separator {
         width: 100%;
         height: 2px;
@@ -229,3 +384,4 @@
         margin-bottom: 15px;
     }
 }
+

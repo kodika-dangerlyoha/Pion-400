@@ -32,7 +32,6 @@ const toggle_matchBlock = (id) => {
 }
 
 // -------- подсветка линий в статистике карт
-
 const scope_map = (n) => {
     let z = 0;
     document.querySelectorAll('.maps__row').forEach(() => {
@@ -45,4 +44,17 @@ const unscope_map = () => {
     document.querySelectorAll('.maps__row__values__value_scope').forEach(el => {
         el.classList.remove('maps__row__values__value_scope');
     })
+}
+
+// -------- смена блоков статистики
+
+const display_list = {
+    hth: "block"
+}
+
+const toggle_match_stat = (title) => {
+    document.querySelector(`.meetings__hth`).classList.toggle('meetings__hth_active');
+    document.querySelector(`.meetings__lustMatches`).classList.toggle('meetings__lustMatches_active');
+    document.querySelector('.meetings__header__button_active').classList.remove('meetings__header__button_active');
+    document.querySelector(`.meetings__header__button_${title}`).classList.add('meetings__header__button_active');
 }

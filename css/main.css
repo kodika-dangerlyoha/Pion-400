@@ -2560,6 +2560,34 @@ label {
   display: flex;
 }
 
+.matchBlock__head__bg__pers {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  z-index: 2;
+}
+
+.matchBlock__head__bg__pers > img {
+  display: none;
+  height: 100%;
+}
+
+.matchBlock__head__bg__pers_left {
+  left: -10px;
+}
+
+.matchBlock__head__bg__pers_right {
+  right: -10px;
+}
+
+.matchBlock__head__bg__pers_ct > img._ct {
+  display: block;
+}
+
+.matchBlock__head__bg__pers_t > img._t {
+  display: block;
+}
+
 .matchBlock__head__bg > img {
   position: relative;
   z-index: 1;
@@ -2567,7 +2595,7 @@ label {
 
 .matchBlock__head__bg > div._center {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: linear-gradient(to right, rgba(37, 37, 37, 0.3), rgba(37, 37, 37, 0.9) 40%, rgb(37, 37, 37), rgba(37, 37, 37, 0.9) 60%, rgba(37, 37, 37, 0.3));
   top: 0;
   bottom: 0;
@@ -2577,7 +2605,7 @@ label {
 
 .matchBlock__head__bg > div._bottom {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: linear-gradient(to bottom, rgba(30, 30, 30, 0), rgb(30, 30, 30));
   height: 200px;
   bottom: 0;
@@ -2719,8 +2747,8 @@ label {
 .matchBlock__head__center__map {
   font-size: 22px;
   font-weight: 700;
-  margin-top: 5px;
   text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .matchBlock__head__center__score {
@@ -2730,6 +2758,21 @@ label {
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 115px;
+  transform: translateX(-1px);
+}
+
+.matchBlock__head__center__score > span {
+  width: 50%;
+}
+
+.matchBlock__head__center__score > span:first-child {
+  text-align: end;
+}
+
+.matchBlock__head__center__score > span:last-child {
+  text-align: start;
+  transform: translateX(0px);
 }
 
 .matchBlock__head__center__percentages__values {

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Предматчевая Статистика</title>
+	<title>Лайв</title>
 	<link rel="stylesheet" href="css\main.min.css">
 </head>
 <body>
@@ -384,7 +384,7 @@
 									</div>
 								</div>
 								<div class="matchBlock__head__center__coefs">
-                                    <button type="button" class="matchBlock__head__center__coefs__button txt">
+                                    <button type="button" class="matchBlock__head__center__coefs__button matchBlock__head__center__coefs__button_closed txt">
                                         <span>x</span>
                                         2.33
                                         <div>
@@ -1290,6 +1290,14 @@
                         </div>
 						<div class="matchBlock__head__bg">
 							<img src="img/games/cs2/maps/anc.png" alt="">
+							<div class="matchBlock__head__bg__pers matchBlock__head__bg__pers_ct matchBlock__head__bg__pers_left">
+								<img class="_ct" src="img/games/cs2/pers/ct.webp" alt="">
+								<img class="_t" src="img/games/cs2/pers/t.png" alt="">
+							</div>
+							<div class="matchBlock__head__bg__pers matchBlock__head__bg__pers_t matchBlock__head__bg__pers_right">
+								<img class="_ct" src="img/games/cs2/pers/ct.webp" alt="">
+								<img class="_t" src="img/games/cs2/pers/t.png" alt="">
+							</div>
                             <div class="_center"></div>
                             <div class="_bottom"></div>
 						</div>
@@ -1311,7 +1319,7 @@
 							<div class="matchBlock__head__center__top txt">
                                 <div class="matchBlock__head__center__map">Ancient</div>
                                 <div class="matchBlock__head__center__pick">Pick By Team Spirit</div>
-                                <div class="matchBlock__head__center__score"><span>0</span>:<span>0</span></div>
+                                <div class="matchBlock__head__center__score"><span>10</span>:<span>6</span></div>
 							</div>
 							<div class="matchBlock__head__center__bottom">
 								<div class="matchBlock__head__center__roundHistory">
@@ -1484,7 +1492,7 @@
                                     </div>
                                 </div>
 								<div class="matchBlock__head__center__coefs">
-                                    <button type="button" class="matchBlock__head__center__coefs__button txt">
+                                    <button type="button" class="matchBlock__head__center__coefs__button matchBlock__head__center__coefs__button_closed txt">
                                         <span>x</span>
                                         2.33
                                         <div>
@@ -1494,6 +1502,461 @@
                                         </div>
                                     </button>
                                     <button type="button" class="matchBlock__head__center__coefs__button matchBlock__head__center__coefs__button_closed txt">
+                                        <span>x</span>
+                                        1.05
+                                        <div>
+                                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 3.99995H6.5V2.99995C6.5 1.61995 5.38 0.499947 4 0.499947C2.62 0.499947 1.5 1.61995 1.5 2.99995V3.99995H1C0.45 3.99995 0 4.44995 0 4.99995V9.99995C0 10.5499 0.45 10.9999 1 10.9999H7C7.55 10.9999 8 10.5499 8 9.99995V4.99995C8 4.44995 7.55 3.99995 7 3.99995ZM4 8.49995C3.45 8.49995 3 8.04995 3 7.49995C3 6.94995 3.45 6.49995 4 6.49995C4.55 6.49995 5 6.94995 5 7.49995C5 8.04995 4.55 8.49995 4 8.49995ZM2.5 3.99995V2.99995C2.5 2.16995 3.17 1.49995 4 1.49995C4.83 1.49995 5.5 2.16995 5.5 2.99995V3.99995H2.5Z" fill="#777777"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+							</div>
+						</div>
+						<div class="matchBlock__head__team">
+							<div class="matchBlock__head__team__logo flex-center">
+								<img class="def-optimize_img" src="img/teams/logos/faze.png" alt="">
+							</div>
+							<div class="matchBlock__head__team__info">
+								<!-- <div class="matchBlock__head__team__info__inner"> -->
+									<div class="matchBlock__head__team__info__title txt">Faze</div>
+									<div class="matchBlock__head__team__info__separator serHov _forHover"></div>
+									<div class="matchBlock__head__team__info__rating ratHov _forHover txt"><span class="_value">Valve Ranking</span><span class="_key">#4</span></div>
+									<div class="matchBlock__head__team__info__separator"></div>
+									<div class="matchBlock__head__team__info__rating txt"><span class="_value">World Ranking</span><span class="_key">#5</span></div>
+								<!-- </div> -->
+							</div>
+						</div>
+					</div>
+					<div class="matchBlock__stats">
+						<div class="matchBlock__stats__line">
+							<section class="tab">
+                                <div class="tab__team">
+                                    <div class="tab__head txt">
+                                        <span>Player</span>
+                                        <div class="txt">
+                                            <span class="_kd">K-D</span>
+                                            <span class="_pm">+/-</span>
+                                            <span class="_adr">ADR</span>
+                                            <span class="_kast">KAST</span>
+                                            <span class="_rat">R 2.0</span>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab__team tab__team_right">
+                                    <div class="tab__head txt">
+                                        <span>Player</span>
+                                        <div class="txt">
+                                            <span class="_kd">K-D</span>
+                                            <span class="_pm">+/-</span>
+                                            <span class="_adr">ADR</span>
+                                            <span class="_kast">KAST</span>
+                                            <span class="_rat">R 2.0</span>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__player txt">
+                                        <div class="tab__player__left">
+                                            <div class="tab__player__nickname"><span>magixx</span><img src="img/flags/ru.png" alt=""></div>
+                                            <div class="tab__player__left__separator"></div>
+                                            <div class="tab__player__rating"><span class="_key">Rating 2.0</span><span class="_value">1.23</span></div>
+                                        </div>
+                                        <div class="tab__player__right">
+                                            <div>
+                                                <span class="_kd">00-00</span>
+                                                <span class="_pm">+00</span>
+                                                <span class="_adr">000</span>
+                                                <span class="_kast">100%</span>
+                                                <span class="_rat">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+							<section class="logs txt">
+                                <div class="logs__bg">
+                                    <img src="img/games/cs2/logIcons/inferno.png" alt="">
+                                </div>
+                                <div class="logs__list">
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Hooxi</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _blue">donk</span></div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill"><span class="log__nickname _blue">s1mple</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _yellow">Magisk</span></div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Blade</span><img src="img/games/cs2/logIcons/awp.png" alt=""><span class="log__nickname _blue">flamie</span></div>
+                                    </div>
+                                    <div class="log log_RO">
+                                        Round over - <span class="RO_winner"> Winner: <span class="_yellow">T</span>(<span class="_yellow">1</span>-<span class="_blue">0</span>)</span>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">BELCHONOK</span>
+                                            <img src="img/games/cs2/logIcons/m4a1s.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <span class="log__nickname _yellow">kaput</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">ZyWoo</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _yellow">snax</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _yellow">s1mple</span>
+                                            <span class="log__nickname">+</span>
+                                            <span class="log__nickname _yellow">hooxi</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _blue">flamie</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Hooxi</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _blue">donk</span></div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill"><span class="log__nickname _blue">s1mple</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _yellow">Magisk</span></div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Blade</span><img src="img/games/cs2/logIcons/awp.png" alt=""><span class="log__nickname _blue">flamie</span></div>
+                                    </div>
+                                    <div class="log log_RO">
+                                        Round over - <span class="RO_winner"> Winner: <span class="_yellow">T</span>(<span class="_yellow">1</span>-<span class="_blue">0</span>)</span>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">BELCHONOK</span>
+                                            <img src="img/games/cs2/logIcons/m4a1s.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <span class="log__nickname _yellow">kaput</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">ZyWoo</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _yellow">snax</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _yellow">s1mple</span>
+                                            <span class="log__nickname">+</span>
+                                            <span class="log__nickname _yellow">hooxi</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _blue">flamie</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Hooxi</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _blue">donk</span></div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill"><span class="log__nickname _blue">s1mple</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _yellow">Magisk</span></div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Blade</span><img src="img/games/cs2/logIcons/awp.png" alt=""><span class="log__nickname _blue">flamie</span></div>
+                                    </div>
+                                    <div class="log log_RO">
+                                        Round over - <span class="RO_winner"> Winner: <span class="_yellow">T</span>(<span class="_yellow">1</span>-<span class="_blue">0</span>)</span>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">BELCHONOK</span>
+                                            <img src="img/games/cs2/logIcons/m4a1s.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <span class="log__nickname _yellow">kaput</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">ZyWoo</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _yellow">snax</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _yellow">s1mple</span>
+                                            <span class="log__nickname">+</span>
+                                            <span class="log__nickname _yellow">hooxi</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _blue">flamie</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Hooxi</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _blue">donk</span></div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill"><span class="log__nickname _blue">s1mple</span><img src="img/games/cs2/logIcons/ak47.png" alt=""><span class="log__nickname _yellow">Magisk</span></div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill"><span class="log__nickname _yellow">Blade</span><img src="img/games/cs2/logIcons/awp.png" alt=""><span class="log__nickname _blue">flamie</span></div>
+                                    </div>
+                                    <div class="log log_RO">
+                                        Round over - <span class="RO_winner"> Winner: <span class="_yellow">T</span>(<span class="_yellow">1</span>-<span class="_blue">0</span>)</span>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">BELCHONOK</span>
+                                            <img src="img/games/cs2/logIcons/m4a1s.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <span class="log__nickname _yellow">kaput</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_l">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _blue">ZyWoo</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _yellow">snax</span>
+                                        </div>
+                                    </div>
+                                    <div class="log log_r">
+                                        <div class="log__kill">
+                                            <span class="log__nickname _yellow">s1mple</span>
+                                            <span class="log__nickname">+</span>
+                                            <span class="log__nickname _yellow">hooxi</span>
+                                            <img src="img/games/cs2/logIcons/awp.png" alt="">
+                                            <img src="img/games/cs2/logIcons/smoke.png" alt="">
+                                            <img src="img/games/cs2/logIcons/hs.png" alt="">
+                                            <span class="log__nickname _blue">flamie</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+						</div>
+					</div>
+				</div>
+				<div class="matchBlock matchBlock_map" id="match_block-16">
+					<div class="matchBlock__head">
+						<div class="matchBlock__head__status matchBlock__head__status_date txt">16 October 18:00</div>
+						<div class="matchBlock__head__interface">
+                            <button title="favorite-btn" class="_fav flex-center" type="button">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.08103 12.4489L11.2948 20.4013C11.5777 20.6752 11.7192 20.8121 11.886 20.8459C11.9611 20.8611 12.0384 20.8611 12.1135 20.8459C12.2803 20.8121 12.4217 20.6752 12.7047 20.4013L20.9184 12.4489C23.2294 10.2115 23.51 6.52949 21.5664 3.94756L21.201 3.46207C18.8758 0.373344 14.2085 0.891343 12.5747 4.41947C12.3439 4.91784 11.6556 4.91784 11.4248 4.41947C9.79101 0.891343 5.12372 0.373344 2.79853 3.46208L2.43306 3.94756C0.489394 6.52949 0.770033 10.2115 3.08103 12.4489Z" stroke="#737373" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <button title="toggle-btn" class="_stat flex-center" type="button" onclick="toggle_matchBlock(16)">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.821138 21.8566H3.72944C4.10401 21.8566 4.408 21.5533 4.408 21.1781V16.2151C4.408 15.8399 4.10401 15.5365 3.72944 15.5365H0.821138C0.446573 15.5365 0.142578 15.8399 0.142578 16.2151V21.1781C0.142578 21.5527 0.446573 21.8566 0.821138 21.8566ZM1.4997 16.893H3.05088V20.4989H1.4997V16.893Z" fill="#737373"/>
+                                    <path d="M9.54585 21.8567C9.92041 21.8567 10.2244 21.5534 10.2244 21.1782V7.1727C10.2244 6.79746 9.92041 6.49414 9.54585 6.49414H6.63754C6.26298 6.49414 5.95898 6.79746 5.95898 7.1727V21.1782C5.95898 21.5534 6.26298 21.8567 6.63754 21.8567H9.54585ZM7.3161 7.85126H8.86729V20.4996H7.3161V7.85126Z" fill="#737373"/>
+                                    <path d="M15.3635 21.8571C15.7381 21.8571 16.0421 21.5538 16.0421 21.1785V11.8123C16.0421 11.4371 15.7381 11.1338 15.3635 11.1338H12.4559C12.0813 11.1338 11.7773 11.4371 11.7773 11.8123V21.1785C11.7773 21.5538 12.0813 21.8571 12.4559 21.8571H15.3635ZM13.1345 12.4909H14.6856V20.4999H13.1345V12.4909Z" fill="#737373"/>
+                                    <path d="M17.5918 0.821138V21.1779C17.5918 21.5532 17.8958 21.8565 18.2704 21.8565H21.1787C21.5532 21.8565 21.8572 21.5532 21.8572 21.1779V0.821138C21.8572 0.445894 21.5532 0.142578 21.1787 0.142578H18.2704C17.8958 0.142578 17.5918 0.445894 17.5918 0.821138ZM18.9489 1.4997H20.5001V20.4994H18.9489V1.4997Z" fill="#737373"/>
+                                </svg>
+                                <span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5.15465 4.77696C5.9175 5.47045 7.0825 5.47045 7.84535 4.77696L12 1" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+						<div class="matchBlock__head__bg">
+							<img src="img/games/cs2/maps/mir.png" alt="">
+                            <div class="_center"></div>
+                            <div class="_bottom"></div>
+						</div>
+						<div class="matchBlock__head__team">
+							<div class="matchBlock__head__team__logo flex-center">
+								<img class="def-optimize_img" src="img/teams/logos/spirit.webp" alt="">
+							</div>
+							<div class="matchBlock__head__team__info">
+								<!-- <div class="matchBlock__head__team__info__inner"> -->
+									<div class="matchBlock__head__team__info__title txt">Team Spirit</div>
+									<div class="matchBlock__head__team__info__separator serHov _forHover"></div>
+									<div class="matchBlock__head__team__info__rating ratHov _forHover txt"><span class="_value">Valve Ranking</span><span class="_key">#2</span></div>
+									<div class="matchBlock__head__team__info__separator"></div>
+									<div class="matchBlock__head__team__info__rating txt"><span class="_value">World Ranking</span><span class="_key">#3</span></div>
+								<!-- </div> -->
+							</div>
+						</div>
+						<div class="matchBlock__head__center">
+							<div class="matchBlock__head__center__top txt">
+                                <div class="matchBlock__head__center__map">Mirage</div>
+                                <div class="matchBlock__head__center__pick">Pick By Faze</div>
+                                <div class="matchBlock__head__center__score"><span>0</span>:<span>0</span></div>
+							</div>
+							<div class="matchBlock__head__center__bottom">
+								<div class="matchBlock__head__center__percentages">
+									<div class="matchBlock__head__center__percentages__values">
+										<div class="txt">30%</div>
+										<div class="txt">70%</div>
+									</div>
+									<div class="matchBlock__head__center__percentages__range">
+										<div class="matchBlock__head__center__percentages__range__filling">
+											<div class="matchBlock__head__center__percentages__range__filling__point"></div>
+										</div>
+									</div>
+								</div>
+								<div class="matchBlock__head__center__coefs">
+                                    <button type="button" class="matchBlock__head__center__coefs__button txt">
+                                        <span>x</span>
+                                        2.33
+                                        <div>
+                                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 3.99995H6.5V2.99995C6.5 1.61995 5.38 0.499947 4 0.499947C2.62 0.499947 1.5 1.61995 1.5 2.99995V3.99995H1C0.45 3.99995 0 4.44995 0 4.99995V9.99995C0 10.5499 0.45 10.9999 1 10.9999H7C7.55 10.9999 8 10.5499 8 9.99995V4.99995C8 4.44995 7.55 3.99995 7 3.99995ZM4 8.49995C3.45 8.49995 3 8.04995 3 7.49995C3 6.94995 3.45 6.49995 4 6.49995C4.55 6.49995 5 6.94995 5 7.49995C5 8.04995 4.55 8.49995 4 8.49995ZM2.5 3.99995V2.99995C2.5 2.16995 3.17 1.49995 4 1.49995C4.83 1.49995 5.5 2.16995 5.5 2.99995V3.99995H2.5Z" fill="#777777"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="matchBlock__head__center__coefs__button txt">
                                         <span>x</span>
                                         1.05
                                         <div>

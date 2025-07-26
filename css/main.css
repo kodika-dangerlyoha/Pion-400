@@ -2493,8 +2493,6 @@ label {
 .log {
   font-size: 12px;
   display: flex;
-  margin-bottom: 2px;
-  margin-top: 2px;
 }
 
 .log * {
@@ -2546,6 +2544,7 @@ label {
   padding-right: 5px;
   padding-left: 5px;
   max-height: 355px;
+  background: linear-gradient(to bottom, rgb(39, 39, 39), rgb(55, 55, 55));
 }
 
 .logs__bg {
@@ -2555,7 +2554,8 @@ label {
   right: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.2;
+  opacity: 0.4;
+  filter: blur(1px);
 }
 
 .logs__bg > img {
@@ -2563,17 +2563,243 @@ label {
 }
 
 .logs__list {
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: relative;
   z-index: 5;
   width: 100%;
-  height: 355px;
+  height: calc(100% + 15px) !important;
   display: flex;
   flex-direction: column;
+  gap: 4px;
   overflow: scroll;
 }
 
 .logs__list::-webkit-scrollbar {
   width: 0;
+}
+
+.highlights {
+  width: 100%;
+}
+
+.highlights > h4 {
+  margin-bottom: 10px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+}
+
+.highlights__blocks {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  width: 100%;
+}
+
+.highlights__block {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  color: #B8B8B8;
+  height: 98px;
+  transition: all 0.2s, transform 0.07s;
+  cursor: pointer;
+}
+
+.highlights__block__bottom {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: linear-gradient(to top, rgb(37, 37, 37), rgba(37, 37, 37, 0));
+  border-radius: 0 0 5px 5px;
+  transition: 0.2s;
+}
+
+.highlights__block__bg {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(37, 37, 37);
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.2s;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.highlights__block:hover {
+  z-index: 3;
+  transform: scale(1.03);
+}
+
+.highlights__block:hover .highlights__block__bottom {
+  height: 0px;
+  bottom: -20px;
+}
+
+.highlights__block:hover .highlights__block__bg {
+  bottom: -25px;
+  box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.6);
+  background-color: rgb(47, 47, 47);
+  border-color: rgb(80, 80, 80);
+}
+
+.highlights__block:active {
+  transform: scale(0.95);
+}
+
+.mvp {
+  margin-right: 50px;
+}
+
+.mvp > h4 {
+  margin-bottom: 10px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+}
+
+.mvp__block {
+  height: 180px;
+  display: flex;
+  background: linear-gradient(to top, rgb(35, 35, 35), rgb(44, 44, 44));
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+}
+
+.mvp__avatar {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 170px;
+  border-right: 1px solid rgb(55, 55, 55);
+  overflow: hidden;
+}
+
+.mvp__avatar > img._avatar {
+  position: relative;
+  z-index: 3;
+  height: 95%;
+}
+
+.mvp__avatar > img._flag {
+  height: 14px;
+  position: absolute;
+  z-index: 5;
+  top: 5px;
+  right: 5px;
+  border-radius: 3px;
+}
+
+.mvp__avatar > img._team {
+  position: absolute;
+  height: 120px;
+  z-index: 1;
+  left: -10px;
+  top: -10px;
+  opacity: 0.8;
+}
+
+.mvp__avatar__nickname {
+  position: absolute;
+  z-index: 5;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.mvp__stat {
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding: 10px;
+  gap: 10px;
+}
+
+.mvp__stat__block {
+  position: relative;
+  background-color: #CE1515;
+  border-radius: 5px;
+  width: 60px;
+}
+
+.mvp__stat__block__value {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.mvp__stat__block__key {
+  font-size: 12px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.mvp__stat__block__bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  max-height: 79px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 5px 5px;
+}
+
+.mvp__stat__avg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: -43px;
+  bottom: 0;
+  top: 0;
+}
+
+.mvp__stat__avg > div {
+  margin-right: 5px;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.mvp__stat__avg > span {
+  font-size: 14px;
 }
 
 .matchBlock {
@@ -2624,7 +2850,11 @@ label {
 
 .matchBlock__head__status_date {
   background-color: rgb(55, 55, 55);
+}
+
+.matchBlock__head__status_end {
   background-color: rgb(55, 55, 55);
+  border: 1px solid rgb(204, 51, 51);
 }
 
 .matchBlock__head__interface {
@@ -2864,6 +3094,9 @@ label {
   padding-right: 6px;
   border-radius: 6px;
   background-color: rgb(206, 21, 21);
+  background-color: rgba(40, 40, 40, 0.6);
+  background: linear-gradient(to bottom, rgba(65, 65, 65, 0.6), rgba(15, 15, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -2885,7 +3118,6 @@ label {
   align-items: center;
   gap: 5px;
   width: 115px;
-  transform: translateX(-1px);
 }
 
 .matchBlock__head__center__score > span {
@@ -3097,6 +3329,7 @@ label {
 
 .matchBlock_map .matchBlock__head__bg {
   display: block;
+  filter: grayscale(0.5);
 }
 
 .matchBlock_map .matchBlock__head__bg > img {
@@ -3108,7 +3341,40 @@ label {
   display: none;
 }
 
-.matchBlock_map .matchBlock__head__status {
+.matchBlock_live .matchBlock__head__bg {
+  filter: grayscale(0) !important;
+}
+
+.matchBlock_decider .matchBlock__stats {
+  display: none;
+}
+
+.matchBlock_decider .matchBlock__head {
+  height: 150px;
+}
+
+.matchBlock_decider .matchBlock__head__interface {
+  display: none;
+}
+
+.matchBlock_decider .matchBlock__head__center {
+  justify-content: center;
+}
+
+.matchBlock_decider .matchBlock__head__center__bottom {
+  display: none;
+}
+
+.matchBlock_decider .matchBlock__head__center__score {
+  opacity: 0.7;
+  display: none;
+}
+
+.matchBlock_decider .matchBlock__head__team {
+  justify-content: center;
+}
+
+.matchBlock_decider .matchBlock__head__team__info {
   display: none;
 }
 

@@ -1,5 +1,146 @@
 @use '../default/base';
 
-// .footer {
-    
-// }
+.footer {
+    background-color: base.$clr-gray_37;
+    border-top: 1px solid base.$clr-gray_55;
+    margin-top: 50px;
+    & > .inner {
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+    &__separator {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(60, 60, 60);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        &__logo {
+            & > img {
+
+            }
+        }
+        &__nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            & > a {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(230, 230, 230);
+                transition: .15s;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        & > button {
+            background-color: base.$clr-gray_43;
+            border: 1px solid base.$clr-gray_55;
+            border-radius: 7px;
+
+            height: 45px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s;
+            &:hover {
+                background-color: base.$clr-gray_47_hover;
+            }
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+    &__body {
+        &__links {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            &__title {
+                margin-bottom: 8px;
+                & > h4 {
+                    color: rgb(138, 138, 138);
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            &__container {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+            &__contacts {
+                & a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+
+                    width: 115px;
+                    height: 65px;
+                    border-radius: 7px;
+
+                    background-color: base.$clr-gray_43;
+                    border: 1px solid base.$clr-gray_55;
+                    cursor: pointer;
+                    transition: .2s;
+                    & > img {
+                        height: 23px;
+                    }
+                    & > span {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                    &:hover {   
+                        background-color: base.$clr-gray_47_hover;
+                    }
+                    &:active {
+                        transform: scale(.98);
+                    }
+                }
+            }
+            &__social {
+                & a {
+                    & > img {
+                        height: 25px;
+                    }
+                }
+            }
+            &__social &__title > h4 {
+                text-align: right;
+            }
+            &__social &__container {
+                justify-content: end;
+            }
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            &__copyright {
+                font-size: 14px;
+                color: rgb(138, 138, 138);
+            }
+            &__banks {
+                & > img {
+                    height: 28px;
+                }
+            }
+        }
+    }
+}

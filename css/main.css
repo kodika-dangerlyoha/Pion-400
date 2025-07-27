@@ -1688,7 +1688,7 @@ label {
 }
 
 .maps {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .maps:hover .maps__row__values__value {
@@ -2944,6 +2944,23 @@ label {
   display: block;
 }
 
+.matchBlock__head__bg__colors {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.matchBlock__head__bg__colors_left {
+  background: linear-gradient(to right, rgba(46, 202, 25, 0.2), transparent, rgba(204, 22, 22, 0.2));
+}
+
+.matchBlock__head__bg__colors_right {
+  background: linear-gradient(to left, rgba(46, 202, 25, 0.2), transparent, rgba(204, 22, 22, 0.2));
+}
+
 .matchBlock__head__bg > img {
   position: relative;
   z-index: 1;
@@ -3327,9 +3344,12 @@ label {
   width: 50%;
 }
 
+.matchBlock_match_pre .matchBlock__head__interface button._stat {
+  display: none;
+}
+
 .matchBlock_map .matchBlock__head__bg {
   display: block;
-  filter: grayscale(0.5);
 }
 
 .matchBlock_map .matchBlock__head__bg > img {
@@ -3341,8 +3361,8 @@ label {
   display: none;
 }
 
-.matchBlock_live .matchBlock__head__bg {
-  filter: grayscale(0) !important;
+.matchBlock_pre .matchBlock__head__bg {
+  filter: grayscale(0.5);
 }
 
 .matchBlock_decider .matchBlock__stats {

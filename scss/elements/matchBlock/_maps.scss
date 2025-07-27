@@ -2,11 +2,9 @@
 
 .maps {
     padding: {
-        top: 30px;
-        // left: 20px;
-        // right: 20px;
+        top: 10px;
     };
-    &:hover &__row__values__value{
+    &:hover &__row__values__value {
         color: rgb(210, 210, 210);
         // transform: scale(0.95);
     }
@@ -254,5 +252,4 @@
             }
         }
     }
-    
 }

@@ -7,7 +7,6 @@
 @use "highlights";
 @use "mvp";
 
-
 .matchBlock {
     position: relative;
     margin-bottom: 20px;
@@ -140,6 +139,20 @@
                 }
                 &_t > img._t{
                     display: block;
+                }
+            }
+            &__colors {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                &_left {
+                    background: linear-gradient(to right, rgba(46, 202, 25, 0.2), transparent, rgba(204, 22, 22, 0.2));
+                }
+                &_right {
+                    background: linear-gradient(to left, rgba(46, 202, 25, 0.2), transparent, rgba(204, 22, 22, 0.2));
                 }
             }
             & > img {
@@ -507,10 +520,14 @@
             width: 50%;
         }
     }
+    &_match_pre &{
+        &__head__interface button._stat {
+            display: none;
+        }
+    }
     &_map &__head {
         &__bg {
             display: block;
-            filter: grayscale(.5);
             & > img {
                 width: 100%;
                 transform: translateY(-30%);
@@ -520,8 +537,8 @@
             }
         }
     }
-    &_live &__head__bg {
-        filter: grayscale(0) !important;
+    &_pre &__head__bg{
+        filter: grayscale(.5);
     }
     &_decider &{
         &__stats {
@@ -550,18 +567,20 @@
             }
         }
     }
-    &_closed &__stats{
-        max-height: 0px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        top: -4px;
-        opacity: 0;
-        & > * {
-            transform: translateY(-50px);
+    &_closed &{
+        &__stats {
+            max-height: 0px;
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            top: -4px;
+            opacity: 0;
+            & > * {
+                transform: translateY(-50px);
+            }
         }
-    }
-    &_closed &__head__interface > button._stat > span {
-        transform: rotate(0deg);
+        &__head__interface > button._stat > span {
+            transform: rotate(0deg);
+        }
     }
 }

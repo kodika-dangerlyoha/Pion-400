@@ -12,7 +12,10 @@
     };
     &__stream {
         width: 100%;
+        height: 236px;
         margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 5px;
         & > img {
             width: 100%;
             margin: 0;

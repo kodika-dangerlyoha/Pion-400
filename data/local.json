@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "nickname": "_4prndbob",
+            "visibility_balance": true,
+            "balance": 845.45
+        },
+        {
+            "id": 2,
+            "nickname": "_4prndbob",
+            "visibility_balance": false,
+            "balance": 12456.2
+        }
+    ]
+}

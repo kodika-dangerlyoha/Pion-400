@@ -22,7 +22,7 @@
         &__left {
             display: flex;
             align-items: center;
-            gap: 50px;
+            gap: 38px;
         }
         // &__logo {
         //     & > img {
@@ -32,15 +32,17 @@
         &__nav {
             display: flex;
             align-items: center;
-            gap: 25px;
+            // gap: 25px;
             & > a {
                 font-size: 16px;
                 font-weight: 400;
-                color: rgb(230, 230, 230);
+                color: rgb(255, 255, 255);
                 transition: .15s;
                 cursor: pointer;
+                padding-left: 12px;
+                padding-right: 12px;
                 &:hover {
-                    color: rgb(255, 255, 255);
+                    color: rgb(220, 220, 220);
                 }
             }
         }

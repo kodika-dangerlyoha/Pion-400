@@ -402,11 +402,26 @@ label {
 .header__balance__value > svg {
   height: 14px;
 }
+.header__balance__value > svg.eye_closed {
+  display: block;
+}
+.header__balance__value > svg.eye_open {
+  display: none;
+}
 .header__balance__value path {
   transition: 0.2s;
 }
 .header__balance__value:hover path {
   stroke: #fff;
+}
+.header__balance_hiden .header__balance__value > svg.eye_closed {
+  display: none;
+}
+.header__balance_hiden .header__balance__value > svg.eye_open {
+  display: block;
+}
+.header__balance_hiden .header__balance__value > div {
+  color: rgb(200, 200, 200);
 }
 
 .inner {
@@ -630,22 +645,23 @@ label {
 .footer__head__left {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 38px;
 }
 .footer__head__nav {
   display: flex;
   align-items: center;
-  gap: 25px;
 }
 .footer__head__nav > a {
   font-size: 16px;
   font-weight: 400;
-  color: rgb(230, 230, 230);
+  color: rgb(255, 255, 255);
   transition: 0.15s;
   cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .footer__head__nav > a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(220, 220, 220);
 }
 .footer__head > button {
   background-color: rgb(43, 43, 43);
@@ -1236,7 +1252,10 @@ label {
 }
 .rAside__stream {
   width: 100%;
+  height: 236px;
   margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .rAside__stream > img {
   width: 100%;
@@ -1760,6 +1779,12 @@ label {
   border: 1px solid rgb(55, 55, 55);
   border-radius: 5px;
   font-size: 14px;
+  transition: 0.2s;
+}
+
+.maps__head__key__top_scope {
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(80, 80, 80);
 }
 
 .maps__head__key__teams {
@@ -1783,7 +1808,7 @@ label {
   height: 22px;
 }
 
-.maps__head__key__teams__team:hover {
+.maps__head__key__teams__team_scope {
   background-color: rgb(50, 50, 50);
   border-color: rgb(80, 80, 80);
 }

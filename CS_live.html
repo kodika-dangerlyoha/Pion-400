@@ -31,11 +31,14 @@
 							<rect class="rect-p" x="5" y="3" width="1" height="5" fill="#D9D9D9"/>
 						</svg>
 					</div>
-					<div class="header__balance__value">
-						<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="header__balance__value" onclick="toggle_visibility_balance()">
+						<svg class="eye_closed" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M1.48279 1L17.5168 16M7.57955 6.76137C7.11399 7.21133 6.82748 7.82433 6.82748 8.5C6.82748 9.88075 8.02396 11 9.49981 11C10.2325 11 10.8963 10.7242 11.379 10.2775M4.60053 4.03929C2.90867 5.08362 1.62 6.65328 1 8.5C2.13508 11.8809 5.51141 14.3333 9.49999 14.3333C11.2717 14.3333 12.9225 13.8495 14.3098 13.0153M8.60903 2.70782C8.90209 2.68061 9.19935 2.66667 9.49999 2.66667C13.4886 2.66667 16.865 5.11909 18 8.5C17.75 9.245 17.391 9.94483 16.9407 10.5833" stroke="#8a8a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
-						<div class="txt">879.43₽</div>
+                        <svg class="eye_open" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.57955 5.76135C7.11399 6.21132 6.82748 6.82432 6.82748 7.49999C6.82748 8.88074 8.02396 9.99999 9.49981 9.99999C10.2325 9.99999 10.8963 9.72415 11.379 9.27749M14.3098 12.0153C12.9225 12.8495 11.2717 13.3333 9.49999 13.3333C5.51141 13.3333 2.13508 10.8809 1 7.49999C1.62 5.65327 2.90867 4.0836 4.60053 3.03928C5.72323 2.34628 6.5 1.79166 9.49999 1.66665C13.5 1.49998 16.865 4.11908 18 7.49999C17.75 8.24499 17.391 8.94482 16.9407 9.58332" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+						<div class="txt" id="user_balance"></div>
 					</div>
 				</div>
 			</div>
@@ -2536,7 +2539,7 @@
 			<aside class="rAside">
 				<div class="rAside__stream">
 					<!-- <img src="img/stream.png" alt=""> -->
-					<iframe title="stream_from_tw" src="https://player.twitch.tv/?channel=rachelr&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="258" width="620"></iframe>
+					<iframe title="stream_from_tw" src="https://player.twitch.tv/?channel=bysl4m&parent=127.0.0.1" frameborder="0" allowfullscreen="true" scrolling="no" height="236px" width="100%"></iframe>
 				</div>
 				<div class="bettingHistory bettingHistory_hidden">
 					<div class="bettingHistory__header txt" onclick="toggle_bettingHistory()">
@@ -3101,6 +3104,8 @@
             </div>
         </div>
     </footer>
+	<script type="text/javascript" src="data/data.js"></script>
+	<script type="text/javascript" src="scripts/create_blocks.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

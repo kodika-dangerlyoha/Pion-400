@@ -68,6 +68,11 @@
                 border: 1px solid base.$clr-gray_55;
                 border-radius: 5px;
                 font-size: 14px;
+                transition: .2s;
+                &_scope {
+                    background-color: rgb(50, 50, 50);
+                    border-color: rgb(80, 80, 80);
+                }
             }
             &__teams {
                 display: flex;
@@ -85,7 +90,11 @@
                     & > img {
                         height: 22px;
                     }
-                    &:hover {
+                    // &:hover {
+                    //     background-color: rgb(50, 50, 50);
+                    //     border-color: rgb(80, 80, 80);
+                    // }
+                    &_scope {
                         background-color: rgb(50, 50, 50);
                         border-color: rgb(80, 80, 80);
                     }

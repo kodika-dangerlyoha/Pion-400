@@ -148,12 +148,33 @@
             }
             & > svg {
                 height: 14px;
+                &.eye_closed {
+                    display: block;
+                }
+                &.eye_open {
+                    display: none;
+                }
             }
             path{
                 transition: .2s;
             }
             &:hover path{
                 stroke: #fff;
+            }
+        }
+        &_hiden &{
+            &__value {
+                & > svg {
+                    &.eye_closed {
+                        display: none;
+                    }
+                    &.eye_open {
+                        display: block;
+                    }
+                }
+                & > div {
+                    color: rgb(200, 200, 200);
+                }
             }
         }
     }

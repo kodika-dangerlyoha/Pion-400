@@ -1,13 +1,40 @@
+
+// -------- открытие/закртыие списка турниров и матчей
 const show_tournament = (title) => {
     const active = document.querySelector('.navigation__games__game_active');
     const next = document.querySelector(`#nav_games_${title}`);
 
     if (active) {
         active.classList.remove('navigation__games__game_active');
+        active.classList.add('navigation__games__game_closed');
     }
     
     if (active != next) {
+        if (active) {
+            active.classList.remove('navigation__games__game_active');
+            active.classList.add('navigation__games__game_closed');
+        }
+        next.classList.remove('navigation__games__game_closed');
         next.classList.add('navigation__games__game_active');
+    }
+}
+
+const toggle_tournament = (title) => {
+    const active = document.querySelector('.navigation__games__game__tournament_active');
+    const next = document.querySelector(`#tournament-${title}`);
+
+    if (active) {
+        active.classList.remove('navigation__games__game__tournament_active');
+        active.classList.add('navigation__games__game__tournament_closed');
+    }
+    
+    if (active != next) {
+        if (active) {
+            active.classList.remove('navigation__games__game__tournament_active');
+            active.classList.add('navigation__games__game__tournament_closed');
+        }
+        next.classList.remove('navigation__games__game__tournament_closed');
+        next.classList.add('navigation__games__game__tournament_active');
     }
 }
 

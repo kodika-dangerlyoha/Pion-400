@@ -80,10 +80,6 @@
                 padding: 5px;
                 cursor: pointer;
                 transition: .2s;
-                // & > svg {
-                //     & > path {
-                //     }
-                // }
                 &._fav {
                     width: 36px;
                     & path {
@@ -96,8 +92,9 @@
                     align-items: center;
                     justify-content: space-between;
                     gap: 7px;
-                    // & path {
-                    // }
+                    & > svg path {
+                        fill: #fff;
+                    }
                     & > span {
                         transition: .2s;
                         transform: rotate(180deg);
@@ -579,8 +576,13 @@
                 transform: translateY(-50px);
             }
         }
-        &__head__interface > button._stat > span {
-            transform: rotate(0deg);
+        &__head__interface > button._stat {
+            & > span {
+                transform: rotate(0deg);
+            }
+            & > svg > path {
+                fill: #737373;
+            }
         }
     }
 }

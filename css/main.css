@@ -2918,6 +2918,10 @@ label {
   gap: 7px;
 }
 
+.matchBlock__head__interface > button._stat > svg path {
+  fill: #fff;
+}
+
 .matchBlock__head__interface > button._stat > span {
   transition: 0.2s;
   transform: rotate(180deg);
@@ -3438,6 +3442,10 @@ label {
 
 .matchBlock_closed .matchBlock__head__interface > button._stat > span {
   transform: rotate(0deg);
+}
+
+.matchBlock_closed .matchBlock__head__interface > button._stat > svg > path {
+  fill: #737373;
 }
 
 .centerBlock {
